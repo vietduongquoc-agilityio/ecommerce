@@ -1,4 +1,4 @@
-import PageDashboard from "./ui/dashboard/page";
+import PageDashboard from "./ui/dashboard/over-view/page";
 import SideNav from "./ui/dashboard/sidenav";
 
 export default function Page() {
