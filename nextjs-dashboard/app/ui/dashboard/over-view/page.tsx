@@ -1,6 +1,5 @@
 import RevenueChart from "@/app/ui/dashboard/revennue-chart";
 import LatestInvoices from "@/app/ui/dashboard/latest-invoices";
-import { fetchCardData } from "@/app/lib/data";
 import { inter } from "../../fonts";
 import { Suspense } from "react";
 import CardWrapper from "../cards";
