@@ -23,7 +23,9 @@ export default async function Page(props: {
         <h1 className={`${inter.className} text-2xl`}>Invoices</h1>
       </div>
       <div className="mt-4 flex items-center justify-between gap-2 md:mt-8">
-        <Search placeholder="Search invoices..." />
+        <Suspense>
+          <Search placeholder="Search invoices..." />
+        </Suspense>
         <CreateInvoice />
       </div>
       <Suspense key={query + currentPage} fallback={<InvoicesTableSkeleton />}>
