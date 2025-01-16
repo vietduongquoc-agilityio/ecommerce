@@ -2,12 +2,14 @@ import Link from "next/link";
 import AcmeLogo from "./ui/acme-logo";
 import PageDashboard from "./ui/dashboard/over-view/page";
 import SideNav from "./ui/dashboard/sidenav";
+import "@/app/ui/global.css";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 export const experimental_ppr = true;
-export default function Page() {
+export default async function Page() {
   return (
     <main className="flex p-6 ">
-      <aside>
+      <aside className="dark:bg-gray-800">
         <Link
           className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
           href="/"
@@ -16,12 +18,12 @@ export default function Page() {
             <AcmeLogo />
           </div>
         </Link>
-        {/* <Link
-        href="/login"
-        className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-      >
-        <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
-      </Link> */}
+        <Link
+          href="/login"
+          className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+        >
+          <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
+        </Link>
         <SideNav />
       </aside>
       <PageDashboard />

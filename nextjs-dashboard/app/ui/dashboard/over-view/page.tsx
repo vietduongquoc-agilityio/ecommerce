@@ -8,6 +8,11 @@ import {
   LatestInvoicesSkeleton,
   CardSkeleton,
 } from "@/app/ui/skeletons";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'over-view',
+};
 
 export default async function PageDashboard() {
   return (

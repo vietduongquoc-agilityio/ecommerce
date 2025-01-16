@@ -1,3 +1,4 @@
+import ToggleTheme from '@/app/components/toggle';
 import NavLinks from '@/app/ui/dashboard/nav-links';
 import { PowerIcon } from '@heroicons/react/24/outline';
 
@@ -13,6 +14,7 @@ export default function SideNav() {
             <div className="hidden md:block">Sign Out</div>
           </button>
         </form>
+        <ToggleTheme />
       </div>
     </div>
   );
