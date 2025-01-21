@@ -1,6 +1,6 @@
+import React from "react";
 import RevenueChart from "@/app/ui/dashboard/revennue-chart";
 import LatestInvoices from "@/app/ui/dashboard/latest-invoices";
-import { inter } from "../../fonts";
 import { Suspense } from "react";
 import CardWrapper from "../cards";
 import {
@@ -9,17 +9,15 @@ import {
   CardSkeleton,
 } from "@/app/ui/skeletons";
 import { Metadata } from "next";
+import CustomModal from "@/app/components/modal";
 
 export const metadata: Metadata = {
-  title: 'over-view',
+  title: "over-view",
 };
 
 export default async function PageDashboard() {
   return (
     <>
-      <h1 className={`${inter.className} mb-4 text-xl md:text-2xl`}>
-        {/* Dashboard */}
-      </h1>
       <main className="flex min-h-screen flex-col p-4">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <Suspense fallback={<CardSkeleton />}>
@@ -34,6 +32,7 @@ export default async function PageDashboard() {
             <LatestInvoices />
           </Suspense>
         </div>
+        <CustomModal />
       </main>
     </>
   );
