@@ -4,7 +4,7 @@ import Search from "@/app/ui/search";
 import { FormattedCustomersTable } from "@/app/lib/definitions";
 import { Suspense } from "react";
 
-export default async function CustomersTable({
+export default function CustomersTable({
   customers,
 }: {
   customers: FormattedCustomersTable[];

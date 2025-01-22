@@ -214,3 +214,5 @@ export async function fetchFilteredCustomers(query: string) {
     throw new Error("Failed to fetch customer table.");
   }
 }
+
+export { sql };

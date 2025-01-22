@@ -9,7 +9,6 @@ import {
   CardSkeleton,
 } from "@/app/ui/skeletons";
 import { Metadata } from "next";
-import CustomModal from "@/app/components/modal";
 
 export const metadata: Metadata = {
   title: "over-view",
@@ -32,7 +31,6 @@ export default async function PageDashboard() {
             <LatestInvoices />
           </Suspense>
         </div>
-        <CustomModal />
       </main>
     </>
   );
