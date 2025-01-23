@@ -3,7 +3,7 @@
 import { useActionState } from "react";
 import { signup } from "../actions/auth";
 import { useState } from "react";
-import { Button } from "../ui/button";
+import { toast } from "react-toastify";
 
 interface CustomModalProps {
   showModal: boolean;
@@ -14,13 +14,20 @@ export default function CustomModal({
   showModal,
   setShowModal,
 }: CustomModalProps) {
-  const handleClose = () => setShowModal(false);
   const [state, action, pending] = useActionState(signup, undefined);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassWord] = useState("");
   const handleSubmit = () => {
+    toast.info("register success!!!");
     console.log(">>>> check, ", name, email, password);
+  };
+
+  const handleClose = () => {
+    setName("");
+    setEmail("");
+    setPassWord("");
+    setShowModal(false);
   };
 
   return (

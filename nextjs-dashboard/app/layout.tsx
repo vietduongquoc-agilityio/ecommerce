@@ -5,6 +5,7 @@ import { inter } from "./ui/fonts";
 import { Metadata } from "next";
 import Link from "next/link";
 import "@/app/ui/global.css";
+import { Bounce, ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: {
@@ -41,6 +42,19 @@ export default function RootLayout({
           </aside>
           <SideNav />
           {children}
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            transition={Bounce}
+          />
         </Providers>
       </body>
     </html>

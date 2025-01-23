@@ -11,10 +11,14 @@ import {
 import { Button } from "@/app/ui/button";
 import { createInvoice, State } from "@/app/lib/actions";
 import { useActionState } from "react";
+import { toast } from "react-toastify";
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState: State = { message: null, errors: {} };
   const [state, formAction] = useActionState(createInvoice, initialState);
+  const handleSubmit = () => {
+    toast.success("register success!!!");
+  };
   return (
     <form action={formAction}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
@@ -143,8 +147,11 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
         >
           Cancel
         </Link>
-        <Button type="submit">Create Invoice</Button>
+        <Button onClick={handleSubmit} type="submit">
+          Create Invoice
+        </Button>
       </div>
     </form>
   );
 }
+
