@@ -1,11 +1,11 @@
 "use client";
 
-import ToggleTheme from "@/app/components/toggle";
 import NavLinks from "@/app/ui/dashboard/nav-links";
 import { PowerIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import { Button } from "../button";
+import { Button } from "@/components/ui/button";
 import CustomModal from "@/app/components/modal";
+import { ModeToggle } from "@/app/components/toggle";
 
 export default function SideNav() {
   const [showModal, setShowModal] = useState(false);
@@ -17,12 +17,12 @@ export default function SideNav() {
         <Button onClick={() => setShowModal(true)}>Register</Button>
         <CustomModal showModal={showModal} setShowModal={setShowModal} />
         <form>
-          <button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
+          <Button className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
             <PowerIcon className="w-6" />
             <div className="hidden md:block">Sign Out</div>
-          </button>
+          </Button>
         </form>
-        <ToggleTheme />
+        <ModeToggle />
       </div>
     </div>
   );

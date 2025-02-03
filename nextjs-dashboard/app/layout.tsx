@@ -1,11 +1,11 @@
 import SideNav from "./ui/dashboard/sidenav";
-import { Providers } from "./providers";
 import AcmeLogo from "./ui/acme-logo";
 import { inter } from "./ui/fonts";
 import { Metadata } from "next";
 import Link from "next/link";
 import "@/app/ui/global.css";
 import { Bounce, ToastContainer } from "react-toastify";
+import { ThemeProvider } from "@/app/components/theme-provider";
 
 export const metadata: Metadata = {
   title: {
@@ -24,7 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        <Providers>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <aside className="dark:bg-gray-800">
             <Link
               className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
@@ -55,7 +60,7 @@ export default function RootLayout({
             theme="light"
             transition={Bounce}
           />
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );

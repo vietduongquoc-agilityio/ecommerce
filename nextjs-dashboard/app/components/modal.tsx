@@ -19,7 +19,17 @@ export default function CustomModal({
   const [email, setEmail] = useState("");
   const [password, setPassWord] = useState("");
   const handleSubmit = () => {
-    toast.info("register success!!!");
+    fetch("http://localhost:8000/blogs", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, password }),
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+    toast.info("register success!!!");  
     console.log(">>>> check, ", name, email, password);
   };
 
