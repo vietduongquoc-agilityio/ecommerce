@@ -7,9 +7,10 @@ import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
 import { Suspense } from "react";
 import { fetchInvoicesPages } from "@/app/lib/data";
 import { Metadata } from "next";
+import HalfRating from "@/app/components/rating-precision";
 
 export const metadata: Metadata = {
-  title: 'Invoices',
+  title: "Invoices",
 };
 
 export default async function Page(props: {
@@ -36,6 +37,7 @@ export default async function Page(props: {
       <Suspense key={query + currentPage} fallback={<InvoicesTableSkeleton />}>
         <Table query={query} currentPage={currentPage} />
       </Suspense>
+      <HalfRating />
       <div className="mt-5 flex w-full justify-center">
         <Pagination totalPages={totalPages} />
       </div>

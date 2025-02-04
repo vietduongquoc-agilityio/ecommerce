@@ -30,6 +30,6 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.ts",
     "scripts/seed.js"
-  ],
+, "app/api/auth/[...nextauth].ts", "app/components/login-btn.jsx", "app/api/restricted.js", "app/ui/dashboard/customers/page.tsx", "app/ui/dashboard/auth/page.tsx", "app/components/suspense.jsx"  ],
   "exclude": ["node_modules"]
 }

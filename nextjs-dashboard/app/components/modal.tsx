@@ -4,6 +4,8 @@ import { useActionState } from "react";
 import { signup } from "../actions/auth";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import Checkboxes from "./checkbox";
+import BasicRating from "./rating";
 
 interface CustomModalProps {
   showModal: boolean;
@@ -29,7 +31,7 @@ export default function CustomModal({
     })
       .then((res) => res.json())
       .then((res) => console.log(res));
-    toast.info("register success!!!");  
+    toast.info("register success!!!");
     console.log(">>>> check, ", name, email, password);
   };
 
@@ -143,6 +145,8 @@ export default function CustomModal({
                 </button>
               </form>
             </div>
+            <Checkboxes />
+            <BasicRating />
 
             {/* Modal Footer */}
             {/* <div className="px-4 py-2 border-t border-gray-200 flex justify-end gap-2"></div> */}

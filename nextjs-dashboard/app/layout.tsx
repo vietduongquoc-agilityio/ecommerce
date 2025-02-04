@@ -24,43 +24,43 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <aside className="dark:bg-gray-800">
-            <Link
-              className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
-              href="/"
-            >
-              <div className="w-32 text-white md:w-40">
-                <AcmeLogo />
-              </div>
-            </Link>
-            {/* <Link
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <aside className="dark:bg-gray-800">
+              <Link
+                className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
+                href="/"
+              >
+                <div className="w-32 text-white md:w-40">
+                  <AcmeLogo />
+                </div>
+              </Link>
+              {/* <Link
               href="/login"
               className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
             >
             </Link> */}
-          </aside>
-          <SideNav />
-          {children}
-          <ToastContainer
-            position="top-right"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick={false}
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="light"
-            transition={Bounce}
-          />
-        </ThemeProvider>
+            </aside>
+            <SideNav />
+            {children}
+            <ToastContainer
+              position="top-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick={false}
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+              transition={Bounce}
+            />
+          </ThemeProvider>
       </body>
     </html>
   );

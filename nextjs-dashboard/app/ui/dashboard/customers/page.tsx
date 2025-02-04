@@ -5,7 +5,7 @@ import mapToFormattedCustomers from "@/app/lib/definitions";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Customers',
+  title: "Customers",
 };
 
 export default async function Page() {

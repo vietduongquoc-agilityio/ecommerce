@@ -3,9 +3,9 @@
 import NavLinks from "@/app/ui/dashboard/nav-links";
 import { PowerIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import CustomModal from "@/app/components/modal";
 import { ModeToggle } from "@/app/components/toggle";
+import { Button } from "../button";
 
 export default function SideNav() {
   const [showModal, setShowModal] = useState(false);
