@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import Checkboxes from "./checkbox";
 import BasicRating from "./rating";
 
+
 interface CustomModalProps {
   showModal: boolean;
   setShowModal: (value: boolean) => void;
@@ -54,7 +55,7 @@ export default function CustomModal({
                 className="text-gray-400 hover:text-gray-600"
                 onClick={handleClose}
               >
-                ×
+                ×××
               </button>
             </div>
 
@@ -147,7 +148,6 @@ export default function CustomModal({
             </div>
             <Checkboxes />
             <BasicRating />
-
             {/* Modal Footer */}
             {/* <div className="px-4 py-2 border-t border-gray-200 flex justify-end gap-2"></div> */}
           </div>
