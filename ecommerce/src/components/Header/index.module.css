@@ -1,0 +1,28 @@
+.image {
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  width: 170px;
+  cursor: pointer;
+}
+
+.cart {
+  width: 25px;
+  cursor: pointer;
+}
+
+.link {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 10px;
+  }
+  
+  .link:hover {
+    color: orange;
+  }
+  
