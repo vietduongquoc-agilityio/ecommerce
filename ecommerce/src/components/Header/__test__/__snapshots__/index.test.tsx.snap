@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correctly and matches snapshot 1`] = `
+<div>
+  <div
+    class="radix-themes"
+    data-accent-color="indigo"
+    data-gray-color="slate"
+    data-has-background="true"
+    data-is-root-theme="true"
+    data-panel-background="translucent"
+    data-radius="medium"
+    data-scaling="100%"
+  >
+    <div
+      class="rt-Box rt-r-w rt-r-max-w"
+      style="--width: 100%; --max-width: 1286px;"
+    >
+      <div
+        class="rt-Flex rt-r-ai-center rt-r-jc-space-between"
+      >
+        <div
+          class="rt-Box"
+        >
+          <img
+            alt="logo"
+            class="image logo"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+        <div
+          class="rt-Flex rt-r-ai-center rt-r-jc-space-between rt-r-w"
+          style="--width: 430px;"
+        >
+          <a
+            class="link"
+            href=""
+          >
+            Home
+          </a>
+          <a
+            class="link"
+            href=""
+          >
+            Shop
+          </a>
+          <a
+            class="link"
+            href=""
+          >
+            About
+          </a>
+          <a
+            class="link"
+            href=""
+          >
+            Contact
+          </a>
+        </div>
+        <img
+          alt="cart-icon"
+          class="image cart"
+          data-nimg="1"
+          decoding="async"
+          height="22"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+          style="color: transparent;"
+          width="25"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

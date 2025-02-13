@@ -3,7 +3,7 @@
 import { Box, Flex } from "@radix-ui/themes";
 import Image from "next/image";
 import logo from "@/assets/Images/Logo.png";
-import styles from "./index.module.css";
+import styles from "./style.module.css";
 import Link from "next/link";
 import cart from "@/assets/Images/Cart.png"
 
