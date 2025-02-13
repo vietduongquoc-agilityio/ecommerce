@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders correctly and matches snapshot 1`] = `
+<div>
+  <div
+    class="radix-themes"
+    data-accent-color="indigo"
+    data-gray-color="slate"
+    data-has-background="true"
+    data-is-root-theme="true"
+    data-panel-background="translucent"
+    data-radius="medium"
+    data-scaling="100%"
+  >
+    <footer
+      class="footer"
+    >
+      <div
+        class="rt-Flex rt-r-w rt-r-max-w"
+        style="--width: 100%; --max-width: 1134px;"
+      >
+        <div
+          class="rt-Flex rt-r-fd-column rt-r-mr"
+          style="--mr: 136px;"
+        >
+          <span
+            class="rt-Text heading"
+            style="font-weight: 700; font-size: 24px; height: 36px; width: 85px; margin-bottom: 50px;"
+          >
+            Funiro.
+          </span>
+          <span
+            class="rt-Text address"
+            style="width: 285px;"
+          >
+            400 University Drive Suite 200 Coral Gables,
+            <div>
+              FL 33134 USA 
+            </div>
+          </span>
+        </div>
+        <div
+          class="rt-Flex rt-r-fd-column rt-r-gap rt-r-mr"
+          style="--gap: 46px; --mr: 144px;"
+        >
+          <span
+            class="rt-Text address"
+          >
+            Links
+          </span>
+          <p
+            class="link"
+          >
+            Home
+          </p>
+          <p
+            class="link"
+          >
+            Shop
+          </p>
+          <p
+            class="link"
+          >
+            About
+          </p>
+          <p
+            class="link"
+          >
+            Contact
+          </p>
+        </div>
+        <div
+          class="rt-Flex rt-r-fd-column rt-r-gap rt-r-mr"
+          style="--gap: 46px; --mr: 72px;"
+        >
+          <span
+            class="rt-Text address"
+          >
+            Help
+          </span>
+          <p
+            class="link"
+            style="width: 140px;"
+          >
+            Payment Options
+          </p>
+          <p
+            class="link"
+          >
+            Returns
+          </p>
+          <p
+            class="link"
+          >
+            Privacy Policies
+          </p>
+        </div>
+        <div
+          class="rt-Flex rt-r-fd-column rt-r-gap rt-r-w rt-r-max-w"
+          style="--gap: 46px; --width: 100%; --max-width: 286px;"
+        >
+          <span
+            class="rt-Text address"
+          >
+            Newsletter
+          </span>
+          <form
+            class="form"
+          >
+            <input
+              class="input"
+              placeholder="Enter your email address"
+              type="email"
+            />
+            <p
+              class="link"
+            >
+              Subscribe
+            </p>
+          </form>
+        </div>
+      </div>
+      <span
+        class="rt-Text"
+        style="height: 60px;"
+      >
+        2023 funiro. All rights reserved.
+      </span>
+    </footer>
+  </div>
+</div>
+`;
