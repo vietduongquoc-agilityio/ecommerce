@@ -1,16 +1,9 @@
-import React from "react";
 import { render } from "@testing-library/react";
-import Footer from "@/components/Footer";
-import { Theme } from "@radix-ui/themes";
-import "@testing-library/jest-dom";
+import Footer from "../index";
 
-describe("Footer component", () => {
+describe("Footer Component", () => {
   it("renders correctly and matches snapshot", () => {
-    const { container } = render(
-      <Theme>
-        <Footer />
-      </Theme>
-    );
-    expect(container).toMatchSnapshot();
+    const { asFragment } = render(<Footer />);
+    expect(asFragment()).toMatchSnapshot();
   });
 });

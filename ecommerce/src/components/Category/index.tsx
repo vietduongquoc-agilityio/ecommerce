@@ -1,34 +1,70 @@
 "use client";
 
-import { Box, Flex } from "@radix-ui/themes";
+import { Box, Flex, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import dining from "@/assets/Images/Dining-room.png";
 import living from "@/assets/Images/Living-room.png";
 import bed from "@/assets/Images/Bed-room.png";
-import styles from "./style.module.css";
+import { colors, fonts } from "@/themes";
 
 export default function Category() {
   return (
     <Box width="100%" maxWidth="1183px">
-      <Flex align="center" justify="between" direction="column">
-        <h1 className={styles.heading}>Browse The Range</h1>
-        <p className={styles.desc}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Text
+          style={{
+            fontSize: fonts.size.xl,
+            fontWeight: fonts.weight.bold,
+            color: colors.secondary.black,
+          }}
+        >
+          Browse The Range
+        </Text>
+        <Text
+          style={{
+            fontSize: fonts.size.md,
+            fontWeight: fonts.weight.regular,
+            color: colors.secondary.splight,
+            marginTop: "10px",
+          }}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-      </Flex>
-      <Flex align="center" justify="between" gap="40px" mt="50px">
-        <Box className={styles.title}>
-          <Image src={dining} alt="dining-room" />
-          <p>Dining</p>
-        </Box>
-        <Box className={styles.title}>
-          <Image src={living} alt="living-icon" />
-          <p>Living</p>
-        </Box>
-        <Box className={styles.title}>
-          <Image src={bed} alt="bed-icon" />
-          <p>Bedroom</p>
-        </Box>
+        </Text>
+      </div>
+      <Flex align="center" justify="center" gap="40px" mt="50px">
+        {[
+          { src: dining, label: "Dining" },
+          { src: living, label: "Living" },
+          { src: bed, label: "Bedroom" },
+        ].map((item) => (
+          <Box
+            key={item.label}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "30px",
+              fontSize: fonts.size.lg,
+              fontWeight: fonts.weight.semiBold,
+              cursor: "pointer",
+              transition: "transform 0.3s ease",
+            }}
+            onMouseOver={(e) =>
+              (e.currentTarget.style.transform = "scale(1.1)")
+            }
+            onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+          >
+            <Image src={item.src} alt={`${item.label}-icon`} />
+            <p>{item.label}</p>
+          </Box>
+        ))}
       </Flex>
     </Box>
   );

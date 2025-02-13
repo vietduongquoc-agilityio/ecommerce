@@ -1,17 +1,12 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Header from "./";
-import { Theme } from "@radix-ui/themes";
 
 const meta: Meta<typeof Header> = {
   title: "Components/Header",
   component: Header,
-  decorators: [
-    (Story) => (
-      <Theme>
-        <Story />
-      </Theme>
-    ),
-  ],
+  parameters: {
+    layout: "fullscreen",
+  },
 };
 
 export default meta;

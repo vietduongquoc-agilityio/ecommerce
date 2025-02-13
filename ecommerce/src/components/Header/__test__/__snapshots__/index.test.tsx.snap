@@ -24,14 +24,13 @@ exports[`Header component renders correctly and matches snapshot 1`] = `
         >
           <img
             alt="logo"
-            class="image logo"
             data-nimg="1"
             decoding="async"
             height="40"
             loading="lazy"
             src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
             srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; width: 170px; cursor: pointer; transition: transform 0.3s ease;"
             width="40"
           />
         </div>
@@ -40,40 +39,39 @@ exports[`Header component renders correctly and matches snapshot 1`] = `
           style="--width: 430px;"
         >
           <a
-            class="link"
             href=""
+            style="font-size: 16px; font-weight: 500; padding: 0px 10px; text-decoration: none; color: rgb(58, 58, 58); transition: color 0.3s ease;"
           >
             Home
           </a>
           <a
-            class="link"
             href=""
+            style="font-size: 16px; font-weight: 500; padding: 0px 10px; text-decoration: none; color: rgb(58, 58, 58); transition: color 0.3s ease;"
           >
             Shop
           </a>
           <a
-            class="link"
             href=""
+            style="font-size: 16px; font-weight: 500; padding: 0px 10px; text-decoration: none; color: rgb(58, 58, 58); transition: color 0.3s ease;"
           >
             About
           </a>
           <a
-            class="link"
             href=""
+            style="font-size: 16px; font-weight: 500; padding: 0px 10px; text-decoration: none; color: rgb(58, 58, 58); transition: color 0.3s ease;"
           >
             Contact
           </a>
         </div>
         <img
           alt="cart-icon"
-          class="image cart"
           data-nimg="1"
           decoding="async"
           height="22"
           loading="lazy"
           src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
           srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
-          style="color: transparent;"
+          style="color: transparent; cursor: pointer; transition: transform 0.3s ease;"
           width="25"
         />
       </div>
