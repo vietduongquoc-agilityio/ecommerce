@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Header from "./";
+import Funiro from "./";
 
-const meta: Meta<typeof Header> = {
-  title: "Components/Header",
-  component: Header,
+const meta: Meta<typeof Funiro> = {
+  title: "Components/Funiro",
+  component: Funiro,
   tags: ['autodocs'],
   parameters: {
     layout: "fullscreen",
@@ -12,6 +12,6 @@ const meta: Meta<typeof Header> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Header>;
+type Story = StoryObj<typeof Funiro>;
 
 export const Default: Story = {};

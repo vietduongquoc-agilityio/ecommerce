@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    style="position: relative; width: 100%; height: auto;"
+  >
+    <div
+      style="display: flex; justify-content: center; flex-direction: column; background: rgb(255, 243, 227); width: 645px; padding: 62px 43px 37px 39px; position: absolute; top: 155px; right: 58px; height: 445px; border-radius: 10px;"
+    >
+      <span
+        class="rt-Text"
+        style="font-size: 16px; font-weight: 600; color: rgb(51, 51, 51);"
+      >
+        New Arrival
+      </span>
+      <span
+        class="rt-Text"
+        style="font-size: 52px; font-weight: 700; color: rgb(184, 142, 47); width: 400px;"
+      >
+        Discover Our New Collection
+      </span>
+      <span
+        class="rt-Text"
+        style="font-size: 18px; font-weight: 500; color: rgb(51, 51, 51); width: 546px; margin-bottom: 45px;"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+      </span>
+      <button
+        class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-solid rt-Button"
+        data-accent-color=""
+        style="padding: 35px 72px; background: rgb(184, 142, 47); font-size: 16px; font-weight: 700; width: 222px; border-radius: 0;"
+      >
+        BY NOW
+      </button>
+    </div>
+    <img
+      alt="hero"
+      data-nimg="1"
+      decoding="async"
+      height="40"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style="color: transparent; width: 100%; height: auto; display: block;"
+      width="40"
+    />
+  </section>
+</DocumentFragment>
+`;

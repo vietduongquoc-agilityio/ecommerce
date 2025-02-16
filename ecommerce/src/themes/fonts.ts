@@ -6,7 +6,8 @@ const fonts = {
     md: "20px",
     lg: "24px",
     xl: "34px",
-    "2xl": "52px",
+    xxl: "40px",
+    xxxl: "52px",
   },
   weight: {
     regular: 400,

@@ -1,5 +1,6 @@
 "use client";
 
+
 import { Box, Flex } from "@radix-ui/themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import logo from "@/assets/Images/Logo.png";
 import cart from "@/assets/Images/Cart.png";
 import { colors, fonts } from "@/themes";
 
-export default function Header() {
+const Header = () => {
   return (
     <Box width="100%" maxWidth="1286px">
       <section
@@ -73,4 +74,6 @@ export default function Header() {
       </section>
     </Box>
   );
-}
+};
+
+export default Header;

@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Category Component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="rt-Box rt-r-w"
+    style="--width: 100%;"
+  >
+    <div
+      style="display: flex; justify-content: center; flex-direction: column; align-items: center;"
+    >
+      <span
+        class="rt-Text"
+        style="font-size: 34px; font-weight: 700; color: rgb(58, 58, 58);"
+      >
+        Browse The Range
+      </span>
+      <span
+        class="rt-Text"
+        style="font-size: 20px; font-weight: 400; color: rgb(159, 159, 159); margin-top: 10px;"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </span>
+    </div>
+    <div
+      style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 50px;"
+    >
+      <div
+        class="rt-Box"
+        style="display: flex; flex-direction: column; align-items: center; gap: 30px; font-size: 24px; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;"
+      >
+        <img
+          alt="Dining-icon"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+        <p>
+          Dining
+        </p>
+      </div>
+      <div
+        class="rt-Box"
+        style="display: flex; flex-direction: column; align-items: center; gap: 30px; font-size: 24px; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;"
+      >
+        <img
+          alt="Living-icon"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+        <p>
+          Living
+        </p>
+      </div>
+      <div
+        class="rt-Box"
+        style="display: flex; flex-direction: column; align-items: center; gap: 30px; font-size: 24px; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;"
+      >
+        <img
+          alt="Bedroom-icon"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+        <p>
+          Bedroom
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

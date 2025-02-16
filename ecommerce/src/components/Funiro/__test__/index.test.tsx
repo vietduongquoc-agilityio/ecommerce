@@ -1,9 +1,9 @@
 import { render } from "@testing-library/react";
-import Header from "../";
+import Funiro from "../";
 
-describe("Header Component", () => {
+describe("Funiro Component", () => {
   it("renders correctly and matches snapshot", () => {
-    const { asFragment } = render(<Header />);
+    const { asFragment } = render(<Funiro />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

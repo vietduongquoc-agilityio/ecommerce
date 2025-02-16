@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Funiro Component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="rt-Box rt-r-w"
+    style="--width: 100%;"
+  >
+    <div
+      style="display: flex; justify-content: center; flex-direction: column; align-items: center;"
+    >
+      <span
+        class="rt-Text"
+        style="font-size: 20px; font-weight: 600; color: rgb(159, 159, 159);"
+      >
+        Share your setup with
+      </span>
+      <span
+        class="rt-Text"
+        style="margin-top: 10px; font-size: 40px; font-weight: 700; color: rgb(58, 58, 58);"
+      >
+        #FuniroFurniture
+      </span>
+    </div>
+    <img
+      alt="banner-funiro"
+      data-nimg="1"
+      decoding="async"
+      height="40"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style="color: transparent;"
+      width="40"
+    />
+  </div>
+</DocumentFragment>
+`;

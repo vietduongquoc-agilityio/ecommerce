@@ -1,15 +1,15 @@
 "use client";
 
-import { Box, Flex, Text } from "@radix-ui/themes";
+import { Box, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import dining from "@/assets/Images/Dining-room.png";
 import living from "@/assets/Images/Living-room.png";
 import bed from "@/assets/Images/Bed-room.png";
 import { colors, fonts } from "@/themes";
 
-export default function Category() {
+const Category = () => {
   return (
-    <Box width="100%" maxWidth="1183px">
+    <Box width="100%">
       <div
         style={{
           display: "flex",
@@ -38,7 +38,15 @@ export default function Category() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </Text>
       </div>
-      <Flex align="center" justify="center" gap="40px" mt="50px">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "40px",
+          marginTop: "50px",
+        }}
+      >
         {[
           { src: dining, label: "Dining" },
           { src: living, label: "Living" },
@@ -65,7 +73,9 @@ export default function Category() {
             <p>{item.label}</p>
           </Box>
         ))}
-      </Flex>
+      </div>
     </Box>
   );
-}
+};
+
+export default Category;

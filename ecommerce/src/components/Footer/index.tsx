@@ -1,17 +1,31 @@
 "use client";
 
-import { Flex, Text } from "@radix-ui/themes";
+import { Text } from "@radix-ui/themes";
 import { colors, fonts } from "@/themes";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="footer">
-      <Flex
-        width="100%"
-        maxWidth="1134px"
-        style={{ borderBottom: "solid 1px #D9D9D9", paddingBottom: "10px" }}
+    <footer
+      className="footer"
+      style={{
+        width: "100%",
+        maxWidth: "1440px",
+        borderTop: "solid 1px #D9D9D9",
+      }}
+    >
+      <div
+        style={{
+          padding: "48px 206px 48px 100px",
+          display: "flex",
+        }}
       >
-        <Flex direction="column" mr="136px">
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            marginRight: "136px",
+          }}
+        >
           <Text
             className="heading"
             style={{ fontSize: fonts.size.lg, fontWeight: fonts.weight.bold }}
@@ -31,14 +45,15 @@ export default function Footer() {
             400 University Drive Suite 200 Coral Gables,
             <div>FL 33134 USA </div>
           </Text>
-        </Flex>
-        <Flex
-          direction="column"
-          mr="144px"
-          gap="46px"
+        </div>
+        <div
           style={{
             fontSize: fonts.size.xs,
             fontWeight: fonts.weight.medium,
+            display: "flex",
+            flexDirection: "column",
+            marginRight: "144px",
+            gap: "46px",
           }}
         >
           <Text className="address" style={{ color: colors.secondary.splight }}>
@@ -48,14 +63,15 @@ export default function Footer() {
           <p className="link">Shop</p>
           <p className="link">About</p>
           <p className="link">Contact</p>
-        </Flex>
-        <Flex
-          direction="column"
-          mr="72px"
-          gap="46px"
+        </div>
+        <div
           style={{
             fontSize: fonts.size.xs,
             fontWeight: fonts.weight.medium,
+            display: "flex",
+            flexDirection: "column",
+            marginRight: "72px",
+            gap: "46px",
           }}
         >
           <Text
@@ -67,16 +83,17 @@ export default function Footer() {
           <p className="link">Payment Options</p>
           <p className="link">Returns</p>
           <p className="link">Privacy Policies</p>
-        </Flex>
-        <Flex
+        </div>
+        <div
           style={{
             fontSize: fonts.size.xs,
             fontWeight: fonts.weight.medium,
+            display: "flex",
+            flexDirection: "column",
+            gap: "46px",
+            maxWidth: "286px",
+            width: "100%",
           }}
-          direction="column"
-          gap="46px"
-          width="100%"
-          maxWidth="286px"
         >
           <Text className="address" style={{ color: colors.secondary.splight }}>
             Newsletter
@@ -102,14 +119,23 @@ export default function Footer() {
               Subscribe
             </button>
           </form>
-        </Flex>
-      </Flex>
+        </div>
+      </div>
       <div
         className="copyright"
-        style={{ paddingTop: "20px", paddingBottom: "40px" }}
+        style={{
+          paddingTop: "20px",
+          paddingBottom: "40px",
+          borderTop: "solid 1px #D9D9D9",
+          maxWidth: "1240px",
+          width:"100%",
+          margin: "0 auto"
+        }}
       >
         2023 Funiro. All rights reserved.
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
