@@ -1,132 +1,119 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer component renders correctly and matches snapshot 1`] = `
-<div>
-  <div
-    class="radix-themes"
-    data-accent-color="indigo"
-    data-gray-color="slate"
-    data-has-background="true"
-    data-is-root-theme="true"
-    data-panel-background="translucent"
-    data-radius="medium"
-    data-scaling="100%"
+exports[`Footer Component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="footer"
+    style="width: 100%; max-width: 1440px; border-top: 1px solid #D9D9D9;"
   >
-    <footer
-      class="footer"
+    <div
+      style="padding: 48px 206px 48px 100px; display: flex;"
     >
       <div
-        class="rt-Flex rt-r-w rt-r-max-w"
-        style="--width: 100%; --max-width: 1134px;"
+        style="display: flex; flex-direction: column; margin-right: 136px;"
       >
-        <div
-          class="rt-Flex rt-r-fd-column rt-r-mr"
-          style="--mr: 136px;"
+        <span
+          class="rt-Text heading"
+          style="font-size: 24px; font-weight: 700;"
         >
-          <span
-            class="rt-Text heading"
-            style="font-weight: 700; font-size: 24px; height: 36px; width: 85px; margin-bottom: 50px;"
-          >
-            Funiro.
-          </span>
-          <span
-            class="rt-Text address"
-            style="width: 285px;"
-          >
-            400 University Drive Suite 200 Coral Gables,
-            <div>
-              FL 33134 USA 
-            </div>
-          </span>
-        </div>
-        <div
-          class="rt-Flex rt-r-fd-column rt-r-gap rt-r-mr"
-          style="--gap: 46px; --mr: 144px;"
+          Funiro.
+        </span>
+        <span
+          class="rt-Text address"
+          style="width: 285px; font-size: 16px; font-weight: 400; color: rgb(159, 159, 159); margin-top: 50px;"
         >
-          <span
-            class="rt-Text address"
-          >
-            Links
-          </span>
-          <p
-            class="link"
-          >
-            Home
-          </p>
-          <p
-            class="link"
-          >
-            Shop
-          </p>
-          <p
-            class="link"
-          >
-            About
-          </p>
-          <p
-            class="link"
-          >
-            Contact
-          </p>
-        </div>
-        <div
-          class="rt-Flex rt-r-fd-column rt-r-gap rt-r-mr"
-          style="--gap: 46px; --mr: 72px;"
-        >
-          <span
-            class="rt-Text address"
-          >
-            Help
-          </span>
-          <p
-            class="link"
-            style="width: 140px;"
-          >
-            Payment Options
-          </p>
-          <p
-            class="link"
-          >
-            Returns
-          </p>
-          <p
-            class="link"
-          >
-            Privacy Policies
-          </p>
-        </div>
-        <div
-          class="rt-Flex rt-r-fd-column rt-r-gap rt-r-w rt-r-max-w"
-          style="--gap: 46px; --width: 100%; --max-width: 286px;"
-        >
-          <span
-            class="rt-Text address"
-          >
-            Newsletter
-          </span>
-          <form
-            class="form"
-          >
-            <input
-              class="input"
-              placeholder="Enter your email address"
-              type="email"
-            />
-            <p
-              class="link"
-            >
-              Subscribe
-            </p>
-          </form>
-        </div>
+          400 University Drive Suite 200 Coral Gables,
+          <div>
+            FL 33134 USA 
+          </div>
+        </span>
       </div>
-      <span
-        class="rt-Text"
-        style="height: 60px;"
+      <div
+        style="font-size: 16px; font-weight: 500; display: flex; flex-direction: column; margin-right: 144px; gap: 46px;"
       >
-        2023 funiro. All rights reserved.
-      </span>
-    </footer>
-  </div>
-</div>
+        <span
+          class="rt-Text address"
+          style="color: rgb(159, 159, 159);"
+        >
+          Links
+        </span>
+        <p
+          class="link"
+        >
+          Home
+        </p>
+        <p
+          class="link"
+        >
+          Shop
+        </p>
+        <p
+          class="link"
+        >
+          About
+        </p>
+        <p
+          class="link"
+        >
+          Contact
+        </p>
+      </div>
+      <div
+        style="font-size: 16px; font-weight: 500; display: flex; flex-direction: column; margin-right: 72px; gap: 46px;"
+      >
+        <span
+          class="rt-Text address"
+          style="color: rgb(159, 159, 159); width: 140px;"
+        >
+          Help
+        </span>
+        <p
+          class="link"
+        >
+          Payment Options
+        </p>
+        <p
+          class="link"
+        >
+          Returns
+        </p>
+        <p
+          class="link"
+        >
+          Privacy Policies
+        </p>
+      </div>
+      <div
+        style="font-size: 16px; font-weight: 500; display: flex; flex-direction: column; gap: 46px; max-width: 286px; width: 100%;"
+      >
+        <span
+          class="rt-Text address"
+          style="color: rgb(159, 159, 159);"
+        >
+          Newsletter
+        </span>
+        <form
+          class="form"
+        >
+          <input
+            class="input"
+            placeholder="Enter your email address"
+            type="email"
+          />
+          <button
+            style="padding: 1px; font-size: 16px; font-weight: 500; text-align: center; width: auto; cursor: not-allowed; transition: all 0.3s ease; background-color: transparent; color: rgb(58, 58, 58);"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="copyright"
+      style="padding-top: 20px; padding-bottom: 40px; border-top: 1px solid #D9D9D9; max-width: 1240px; width: 100%; margin: 0px auto;"
+    >
+      2023 Funiro. All rights reserved.
+    </div>
+  </footer>
+</DocumentFragment>
 `;

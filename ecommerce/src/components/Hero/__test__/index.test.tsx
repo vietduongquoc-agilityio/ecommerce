@@ -1,9 +1,9 @@
 import { render } from "@testing-library/react";
-import Footer from "../index";
+import Hero from "../index";
 
-describe("Footer Component", () => {
+describe("Hero Component", () => {
   it("renders correctly and matches snapshot", () => {
-    const { asFragment } = render(<Footer />);
+    const { asFragment } = render(<Hero />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

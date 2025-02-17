@@ -1,27 +1,79 @@
 "use client";
 
+
 import { Box, Flex } from "@radix-ui/themes";
 import Image from "next/image";
-import logo from "@/assets/Images/Logo.png";
-import styles from "./style.module.css";
 import Link from "next/link";
-import cart from "@/assets/Images/Cart.png"
+import logo from "@/assets/Images/Logo.png";
+import cart from "@/assets/Images/Cart.png";
+import { colors, fonts } from "@/themes";
 
-export default function Header() {
+const Header = () => {
   return (
     <Box width="100%" maxWidth="1286px">
-      <Flex align="center" justify="between">
+      <section
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        {/* Logo */}
         <Box>
-          <Image src={logo} alt="logo" className={`${styles.image} ${styles.logo}`} />
+          <Image
+            src={logo}
+            alt="logo"
+            style={{
+              width: "170px",
+              cursor: "pointer",
+              transition: "transform 0.3s ease",
+            }}
+            onMouseOver={(e) =>
+              (e.currentTarget.style.transform = "scale(1.1)")
+            }
+            onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+          />
         </Box>
+
+        {/* Navigation Links */}
         <Flex align="center" justify="between" width="430px">
-          <Link href="" className={styles.link}>Home</Link>
-          <Link href="" className={styles.link}>Shop</Link>
-          <Link href="" className={styles.link}>About</Link>
-          <Link href="" className={styles.link}>Contact</Link>
+          {["Home", "Shop", "About", "Contact"].map((item) => (
+            <Link
+              key={item}
+              href=""
+              style={{
+                fontSize: fonts.size.xs,
+                fontWeight: fonts.weight.medium,
+                padding: "0 10px",
+                textDecoration: "none",
+                color: colors.secondary.black,
+                transition: "color 0.3s ease",
+              }}
+              onMouseOver={(e) =>
+                (e.currentTarget.style.color = colors.primary.yellow)
+              }
+              onMouseOut={(e) =>
+                (e.currentTarget.style.color = colors.secondary.black)
+              }
+            >
+              {item}
+            </Link>
+          ))}
         </Flex>
-        <Image src={cart} width="25" height="22" alt="cart-icon" className={`${styles.image} ${styles.cart}`} />
-      </Flex>
+
+        {/* Cart Icon */}
+        <Image
+          src={cart}
+          width={25}
+          height={22}
+          alt="cart-icon"
+          style={{ cursor: "pointer", transition: "transform 0.3s ease" }}
+          onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+          onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+        />
+      </section>
     </Box>
   );
-}
+};
+
+export default Header;

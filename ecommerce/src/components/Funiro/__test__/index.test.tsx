@@ -1,9 +1,9 @@
 import { render } from "@testing-library/react";
-import Footer from "../index";
+import Funiro from "../";
 
-describe("Footer Component", () => {
+describe("Funiro Component", () => {
   it("renders correctly and matches snapshot", () => {
-    const { asFragment } = render(<Footer />);
+    const { asFragment } = render(<Funiro />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

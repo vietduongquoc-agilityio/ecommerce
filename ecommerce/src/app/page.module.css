@@ -33,6 +33,7 @@
   gap: 32px;
   grid-row-start: 2;
   font-family: var(--font-poppins);
+  margin-bottom: 200px;
 }
 
 .main ol {
