@@ -4,13 +4,20 @@ import { SetStateAction, useState } from "react";
 import { colors, fonts } from "@/themes";
 import Button from "../Button";
 import Image from "next/image";
-import product1 from "@/assets/Images/Product1.png";
-import product2 from "@/assets/Images/Product2.png";
-import product3 from "@/assets/Images/Product3.png";
-import product4 from "@/assets/Images/Product4.png";
+import product1 from "@/assets/Images/Slider.jpg";
+import product3 from "@/assets/Images/Slider1.jpg";
+import product2 from "@/assets/Images/Slider2.jpg";
+import product4 from "@/assets/Images/Slider3.webp";
 import arowSlider from "@/assets/Images/Arow-slider.png";
+import CTA from "@/assets/Images/CTA.png";
 
 const images = [product1, product2, product3, product4];
+const roomNames = [
+  "01 - Living Room",
+  "02 - Bed Room",
+  "03 - Dining Room",
+  "04 - Office Room",
+];
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -64,18 +71,72 @@ const Slider = () => {
       </aside>
 
       {/* Image Slider */}
-      <aside style={{ position: "relative", width: "400px" }}>
-        <Image
-          src={images[slideIndex]}
-          alt={`slide-${slideIndex}`}
-          width={400}
+      <aside
+        style={{ position: "relative", width: "650px", overflow: "hidden" }}
+      >
+        <div
           style={{
-            width: "100%",
-            height: "auto",
-            transition: "opacity 0.5s ease-in-out",
+            display: "flex",
+            transition: "transform 0.5s ease-in-out",
+            transform: `translateX(-${slideIndex * 100}%)`,
           }}
-        />
+        >
+          {images.map((img, index) => (
+            <div
+              key={index}
+              style={{
+                minWidth: "70%",
+                position: "relative",
+                display: "flex",
+              }}
+            >
+              <Image
+                src={img}
+                alt={`slide-${index}`}
+                style={{
+                  width: "400px",
+                  height: "582px",
+                  transition: "opacity 0.5s ease-in-out",
+                }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: "30px",
+                  left: "24px",
+                  background: "#FFFFFFB8",
+                  padding: "30px 17px 32px 32px",
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: fonts.size.xs,
+                    fontWeight: fonts.weight.medium,
+                    color: colors.secondary.granite,
+                  }}
+                >
+                  {roomNames[index]}
+                </p>
+                <p
+                  style={{
+                    fontSize: "28px",
+                    fontWeight: fonts.weight.semiBold,
+                    color: colors.secondary.black,
+                  }}
+                >
+                  Inner Peace
+                </p>
+                <Image
+                  src={CTA}
+                  alt={"CTA"}
+                  style={{ right: "-48px", position: "absolute", bottom: "0" }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
 
+        {/* Next Slide Button */}
         <Image
           src={arowSlider}
           alt={"arowSlider"}
@@ -83,10 +144,12 @@ const Slider = () => {
           style={{
             position: "absolute",
             top: "50%",
-            right: "-35px",
+            right: "0",
             transform: "translateY(-50%)",
             border: "none",
             cursor: "pointer",
+            width: "60px",
+            height: "60px",
           }}
         />
 

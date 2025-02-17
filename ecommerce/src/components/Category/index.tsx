@@ -2,8 +2,8 @@
 
 import { Box, Text } from "@radix-ui/themes";
 import Image from "next/image";
-import dining from "@/assets/Images/Dining-room.png";
-import living from "@/assets/Images/Living-room.png";
+import dining from "@/assets/Images/Dining.jpg";
+import living from "@/assets/Images/Living.jpg";
 import bed from "@/assets/Images/Bed-room.png";
 import { colors, fonts } from "@/themes";
 
@@ -69,7 +69,14 @@ const Category = () => {
             }
             onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
           >
-            <Image src={item.src} alt={`${item.label}-icon`} />
+            <Image
+              src={item.src}
+              alt={`${item.label}-icon`}
+              style={{
+                width: "375px",
+                height: "480px",
+              }}
+            />
             <p>{item.label}</p>
           </Box>
         ))}
