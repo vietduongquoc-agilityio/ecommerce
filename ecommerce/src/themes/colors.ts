@@ -3,7 +3,8 @@ const colors = {
 
   primary: {
     yellow: "#B88E2F",
-    light: "#FFF3E3"
+    light: "#FFF3E3",
+    floral: "#FCF8F3"
   },
 
   secondary: {

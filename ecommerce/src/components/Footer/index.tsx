@@ -2,6 +2,7 @@
 
 import { Text } from "@radix-ui/themes";
 import { colors, fonts } from "@/themes";
+import Button from "../Button";
 
 const Footer = () => {
   return (
@@ -107,17 +108,11 @@ const Footer = () => {
                 border: "none",
               }}
             />
-            <button
-              className="button"
-              style={{
-                padding: "8px 16px",
-                background: "none",
-                border: "none",
-                cursor: "not-allowed",
-              }}
+            <Button
+              variant="ghost"
             >
               Subscribe
-            </button>
+            </Button>
           </form>
         </div>
       </div>

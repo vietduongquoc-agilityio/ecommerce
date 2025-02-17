@@ -68,6 +68,7 @@ const Hero = () => {
             fontWeight: fonts.weight.bold,
             width: "222px",
             borderRadius: "0",
+            cursor: "pointer",
           }}
         >
           BY NOW

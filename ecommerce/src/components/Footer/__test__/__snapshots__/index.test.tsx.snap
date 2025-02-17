@@ -101,8 +101,7 @@ exports[`Footer Component renders correctly and matches snapshot 1`] = `
             type="email"
           />
           <button
-            class="button"
-            style="padding: 8px 16px; background: none; cursor: not-allowed;"
+            style="padding: 1px; font-size: 16px; font-weight: 500; text-align: center; width: auto; cursor: not-allowed; transition: all 0.3s ease; background-color: transparent; color: rgb(58, 58, 58);"
           >
             Subscribe
           </button>

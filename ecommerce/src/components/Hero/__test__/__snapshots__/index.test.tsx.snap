@@ -29,7 +29,7 @@ exports[`Hero Component renders correctly and matches snapshot 1`] = `
       <button
         class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-solid rt-Button"
         data-accent-color=""
-        style="padding: 35px 72px; background: rgb(184, 142, 47); font-size: 16px; font-weight: 700; width: 222px; border-radius: 0;"
+        style="padding: 35px 72px; background: rgb(184, 142, 47); font-size: 16px; font-weight: 700; width: 222px; border-radius: 0; cursor: pointer;"
       >
         BY NOW
       </button>

@@ -6,17 +6,19 @@ import Category from "@/components/Category";
 import Funiro from "@/components/Funiro";
 import Hero from "@/components/Hero";
 import OurProduct from "@/components/Products";
+import Slider from "@/components/Slider";
 
 export default function Home() {
   return (
     <Theme className={styles.page}>
       <Header />
-        <main className={styles.main}>
-          <Hero />
-          <Category />
-          <OurProduct />
-          <Funiro />
-        </main>
+      <main className={styles.main}>
+        <Hero />
+        <Category />
+        <OurProduct />
+        <Slider />
+        <Funiro />
+      </main>
       <Footer />
     </Theme>
   );

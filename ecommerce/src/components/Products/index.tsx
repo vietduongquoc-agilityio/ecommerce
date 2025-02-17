@@ -8,7 +8,7 @@ const OurProduct = () => {
     <section
       style={{
         width: "100%",
-        maxWidth: "1236px",
+        maxWidth: "1300px",
         margin: "auto",
       }}
     >
@@ -27,8 +27,9 @@ const OurProduct = () => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(4, 1fr)",
-          gap: "20px",
+          gap: "32px",
           justifyContent: "center",
+          paddingLeft:"15px"
         }}
       >
         {Array.from({ length: 8 }).map((_, index) => (
