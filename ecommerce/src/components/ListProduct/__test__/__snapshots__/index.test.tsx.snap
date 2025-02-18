@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OurProduct Component matches snapshot 1`] = `
+exports[`ProductList Snapshot Test renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <p>
     Loading products...

@@ -1,11 +1,35 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { colors, fonts } from "@/themes";
+
+// Services
+import productService, { Product } from "@/services/productService";
 
 // Components
 import { ItemCard } from "..";
 
 const OurProduct = () => {
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchProducts() {
+      try {
+        const data = await productService.getAll();
+        setProducts(data);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchProducts();
+  }, []);
+
+  if (loading) return <p>Loading products...</p>;
+
   return (
     <section
       style={{
@@ -28,14 +52,20 @@ const OurProduct = () => {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(4, 1fr)",
+          gridTemplateColumns: "repeat(auto-fill, minmax(285px, 1fr))",
           gap: "32px",
           justifyContent: "center",
-          paddingLeft:"15px"
+          padding: "0 15px",
         }}
       >
-        {Array.from({ length: 8 }).map((_, index) => (
-          <ItemCard key={index} />
+        {products.slice(0, 8).map((product) => (
+          <ItemCard
+            key={product.id}
+            name={product.productName}
+            description={product.description}
+            price={product.price}
+            image={product.image}
+          />
         ))}
       </div>
     </section>

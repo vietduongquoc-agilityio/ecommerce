@@ -1,7 +1,7 @@
 import apiClient from "./apiClient";
 
 export interface Product {
-  productId: number;
+  id: number;
   productName: string;
   category: string;
   price: number;
@@ -14,7 +14,6 @@ export interface Product {
 const productService = {
   getAll: async (): Promise<Product[]> => {
     const response = await apiClient.get("/products");
-    console.log("API Response:", response.data);
     return response.data.data;
   },
 

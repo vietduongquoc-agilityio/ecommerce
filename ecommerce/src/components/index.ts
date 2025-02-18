@@ -9,6 +9,7 @@ import OurProduct from "./Products";
 import Slider from "./Slider";
 import ShopBanner from "./Banner/Shop";
 import FilterShowing from "./Filter";
+import ProductList from "./ListProduct";
 
 export {
   Button,
@@ -22,4 +23,5 @@ export {
   Slider,
   ShopBanner,
   FilterShowing,
+  ProductList,
 };

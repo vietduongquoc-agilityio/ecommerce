@@ -1,6 +1,10 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import productService, { Product } from "@/services/productService";
+
+import { colors } from "@/themes";
+import { ItemCard } from "..";
 
 export default function ProductList() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -24,15 +28,24 @@ export default function ProductList() {
   if (loading) return <p>Loading products...</p>;
 
   return (
-    <div>
-      <h1>Product List</h1>
-      <ul>
-        {products.map((product) => (
-          <li key={product.productId}>
-            {product.productName} - ${product.price}
-          </li>
-        ))}
-      </ul>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(285px, 1fr))",
+        gap: "20px",
+        padding: "20px",
+        backgroundColor: colors.white,
+      }}
+    >
+      {products.map((product) => (
+        <ItemCard
+          key={product.id}
+          name={product.productName}
+          description={product.description}
+          price={product.price}
+          image={product.image}
+        />
+      ))}
     </div>
   );
 }
