@@ -10,6 +10,7 @@ import Slider from "./Slider";
 import ShopBanner from "./Banner/Shop";
 import FilterShowing from "./Filter";
 import ProductList from "./ListProduct";
+import Achievement from "./Achievement"
 
 export {
   Button,
@@ -24,4 +25,5 @@ export {
   ShopBanner,
   FilterShowing,
   ProductList,
+  Achievement
 };

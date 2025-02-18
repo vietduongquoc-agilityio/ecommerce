@@ -3,6 +3,7 @@ import styles from "@/app/page.module.css";
 
 // Components
 import {
+  Achievement,
   FilterShowing,
   Footer,
   Header,
@@ -18,6 +19,7 @@ const Shop = () => {
         <ShopBanner />
         <FilterShowing />
         <ProductList />
+        <Achievement />
       </main>
       <Footer />
     </Theme>

@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Achievement Component matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    style="width: 100%; height: auto; background: rgb(250, 243, 234); margin-bottom: -32px;"
+  >
+    <ul
+      style="padding: 100px 53px; list-style: none; display: flex; justify-content: space-between;"
+    >
+      <li
+        style="display: flex; gap: 14px; align-items: center;"
+      >
+        <img
+          alt="quality"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+        <div>
+          <p
+            style="font-size: 24px; font-weight: 600;"
+          >
+            High Quality
+          </p>
+          <p
+            style="font-size: 20px; font-weight: 500; color: rgb(159, 159, 159);"
+          >
+            crafted from top materials
+          </p>
+        </div>
+      </li>
+      <li
+        style="display: flex; gap: 14px; align-items: center;"
+      >
+        <img
+          alt="protection"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+        <div>
+          <p
+            style="font-size: 24px; font-weight: 600;"
+          >
+            Warranty Protection
+          </p>
+          <p
+            style="font-size: 20px; font-weight: 500; color: rgb(159, 159, 159);"
+          >
+            Over 2 years
+          </p>
+        </div>
+      </li>
+      <li
+        style="display: flex; gap: 14px; align-items: center;"
+      >
+        <img
+          alt="shipping"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+        <div>
+          <p
+            style="font-size: 24px; font-weight: 600;"
+          >
+            Free Shipping
+          </p>
+          <p
+            style="font-size: 20px; font-weight: 500; color: rgb(159, 159, 159);"
+          >
+            Order over 150 $
+          </p>
+        </div>
+      </li>
+      <li
+        style="display: flex; gap: 14px; align-items: center;"
+      >
+        <img
+          alt="support"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+        <div>
+          <p
+            style="font-size: 24px; font-weight: 600;"
+          >
+            24 / 7 Support
+          </p>
+          <p
+            style="font-size: 20px; font-weight: 500; color: rgb(159, 159, 159);"
+          >
+            Dedicated support
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</DocumentFragment>
+`;
