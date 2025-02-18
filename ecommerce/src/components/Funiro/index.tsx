@@ -1,9 +1,11 @@
 "use client";
 
 import { Box, Text } from "@radix-ui/themes";
-import { colors, fonts } from "@/themes";
-import funiro from "@/assets/Images/Funiro.png";
 import Image from "next/image";
+
+// Images
+import funiro from "@/assets/Images/Funiro.png";
+import { colors, fonts } from "@/themes";
 
 const Funiro = () => {
   return (

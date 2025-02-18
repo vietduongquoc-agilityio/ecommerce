@@ -1,9 +1,14 @@
 "use client";
 
-import hero from "@/assets/Images/Hero.png";
 import Image from "next/image";
-import { Button, Text } from "@radix-ui/themes";
+import { Text } from "@radix-ui/themes";
 import { colors, fonts } from "@/themes";
+
+// Images
+import hero from "@/assets/Images/Hero.png";
+
+// Components
+import { Button } from "..";
 
 const Hero = () => {
   return (
@@ -60,19 +65,18 @@ const Hero = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis.
         </Text>
-        <Button
+        <div
           style={{
-            padding: "35px 72px",
-            background: colors.primary.yellow,
             fontSize: fonts.size.xs,
             fontWeight: fonts.weight.bold,
-            width: "222px",
-            borderRadius: "0",
-            cursor: "pointer",
+            width: "225px",
+            height: "75px",
           }}
         >
-          BY NOW
-        </Button>
+          <Button variant="primary" fullWidth fullHeight>
+            BY NOW
+          </Button>
+        </div>
       </div>
       <Image
         src={hero}

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import ItemCard from "./";
+import { ItemCard } from "..";
 
 const meta: Meta<typeof ItemCard> = {
   title: "Components/ItemCard",
   component: ItemCard,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
 };
 
 export default meta;

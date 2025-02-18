@@ -1,10 +1,14 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
-import { colors, fonts } from "@/themes";
+import Image from "next/image";
+
+// Images
 import Leviosa from "@/assets/Images/Product1.png";
-import Button from "../Button";
+
+// Components
+import { Button } from "..";
+import { colors, fonts } from "@/themes";
 
 const ItemCard = () => {
   const [isHovered, setIsHovered] = useState(false);

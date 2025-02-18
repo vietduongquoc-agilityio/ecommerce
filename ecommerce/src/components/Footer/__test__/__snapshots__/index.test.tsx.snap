@@ -84,7 +84,7 @@ exports[`Footer Component renders correctly and matches snapshot 1`] = `
         </p>
       </div>
       <div
-        style="font-size: 16px; font-weight: 500; display: flex; flex-direction: column; gap: 46px; max-width: 286px; width: 100%;"
+        style="font-size: 16px; font-weight: 500; display: flex; flex-direction: column; gap: 46px;"
       >
         <span
           class="rt-Text address"
@@ -101,7 +101,7 @@ exports[`Footer Component renders correctly and matches snapshot 1`] = `
             type="email"
           />
           <button
-            style="padding: 1px; font-size: 16px; font-weight: 500; text-align: center; width: auto; cursor: not-allowed; transition: all 0.3s ease; background-color: transparent; color: rgb(58, 58, 58);"
+            style="padding: 1px; font-size: 16px; font-weight: 500; text-align: center; width: auto; height: auto; cursor: not-allowed; transition: all 0.3s ease; background-color: transparent; color: rgb(58, 58, 58);"
           >
             Subscribe
           </button>

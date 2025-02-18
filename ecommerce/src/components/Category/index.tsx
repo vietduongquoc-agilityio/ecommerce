@@ -2,9 +2,11 @@
 
 import { Box, Text } from "@radix-ui/themes";
 import Image from "next/image";
+
+// Images
 import dining from "@/assets/Images/Dining.jpg";
 import living from "@/assets/Images/Living.jpg";
-import bed from "@/assets/Images/Bed-room.png";
+import bed from "@/assets/Images/Bed-room.jpg";
 import { colors, fonts } from "@/themes";
 
 const Category = () => {

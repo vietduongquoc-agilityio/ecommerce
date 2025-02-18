@@ -2,7 +2,9 @@
 
 import { Text } from "@radix-ui/themes";
 import { colors, fonts } from "@/themes";
-import Button from "../Button";
+
+// Components
+import { Button } from "..";
 
 const Footer = () => {
   return (
@@ -92,8 +94,7 @@ const Footer = () => {
             display: "flex",
             flexDirection: "column",
             gap: "46px",
-            maxWidth: "286px",
-            width: "100%",
+
           }}
         >
           <Text className="address" style={{ color: colors.secondary.splight }}>
