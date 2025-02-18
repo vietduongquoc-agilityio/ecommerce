@@ -7,6 +7,8 @@ import Header from "./Header";
 import Hero from "./Hero";
 import OurProduct from "./Products";
 import Slider from "./Slider";
+import ShopBanner from "./Banner/Shop";
+import FilterShowing from "./Filter";
 
 export {
   Button,
@@ -18,4 +20,6 @@ export {
   Hero,
   OurProduct,
   Slider,
+  ShopBanner,
+  FilterShowing,
 };

@@ -1,14 +1,18 @@
 import { Theme } from "@radix-ui/themes";
 import styles from "./page.module.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Category from "@/components/Category";
-import Funiro from "@/components/Funiro";
-import Hero from "@/components/Hero";
-import OurProduct from "@/components/Products";
-import Slider from "@/components/Slider";
 
-export default function Home() {
+// Components
+import {
+  Category,
+  Footer,
+  Funiro,
+  Header,
+  Hero,
+  OurProduct,
+  Slider,
+} from "@/components";
+
+const Home = () => {
   return (
     <Theme className={styles.page}>
       <Header />
@@ -22,4 +26,6 @@ export default function Home() {
       <Footer />
     </Theme>
   );
-}
+};
+
+export default Home;
