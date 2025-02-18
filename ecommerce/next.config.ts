@@ -1,18 +1,8 @@
-import { NextConfig } from "next";
-
-const config: NextConfig = {
-  // reactStrictMode: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "s3.amazonaws.com",
-        port: "",
-        pathname: "@/**",
-        search: "",
-      },
-    ],
+    domains: ["s3-alpha-sig.figma.com"],
   },
 };
 
-export default config;
+module.exports = nextConfig;

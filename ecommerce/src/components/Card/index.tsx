@@ -1,16 +1,22 @@
+
 "use client";
 
 import { useState } from "react";
 import Image from "next/image";
 
-// Images
-import Leviosa from "@/assets/Images/Product1.png";
-
 // Components
 import { Button } from "..";
 import { colors, fonts } from "@/themes";
 
-const ItemCard = () => {
+// Define props for ItemCard
+interface ItemCardProps {
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+}
+
+const ItemCard: React.FC<ItemCardProps> = ({ name, description, price, image }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -28,17 +34,17 @@ const ItemCard = () => {
     >
       {/* Product Image */}
       <Image
-        src={Leviosa}
-        alt="leviosa"
+        src={image}
+        alt={name}
+        width={285}
+        height={300}
         style={{
-          width: "100%",
-          height: "300px",
           objectFit: "cover",
         }}
       />
 
       {/* Product Details */}
-      <div style={{ padding: "16px"}}>
+      <div style={{ padding: "16px" }}>
         <p
           style={{
             color: colors.secondary.black,
@@ -47,7 +53,7 @@ const ItemCard = () => {
             marginBottom: "8px",
           }}
         >
-          Syltherine
+          {name}
         </p>
         <p
           style={{
@@ -57,7 +63,7 @@ const ItemCard = () => {
             marginBottom: "8px",
           }}
         >
-          Stylish cafe chair
+          {description}
         </p>
         <p
           style={{
@@ -66,10 +72,11 @@ const ItemCard = () => {
             fontSize: fonts.size.md,
           }}
         >
-          Rp 2.500.000
+          Rp {price.toLocaleString("id-ID")}
         </p>
       </div>
 
+      {/* Overlay on Hover */}
       <div
         style={{
           position: "absolute",
@@ -85,7 +92,7 @@ const ItemCard = () => {
           transition: "opacity 0.3s ease",
         }}
       >
-         <Button variant="secondary">Add to Cart</Button>
+        <Button variant="secondary">Add to Cart</Button>
       </div>
     </article>
   );
