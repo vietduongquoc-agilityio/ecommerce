@@ -2,14 +2,19 @@
 
 import { SetStateAction, useState } from "react";
 import { colors, fonts } from "@/themes";
-import Button from "../Button";
 import Image from "next/image";
+
+// Images
 import product1 from "@/assets/Images/Slider.jpg";
 import product3 from "@/assets/Images/Slider1.jpg";
 import product2 from "@/assets/Images/Slider2.jpg";
 import product4 from "@/assets/Images/Slider3.webp";
 import arowSlider from "@/assets/Images/Arow-slider.png";
 import CTA from "@/assets/Images/CTA.png";
+import { Button } from "..";
+
+// Components
+
 
 const images = [product1, product2, product3, product4];
 const roomNames = [
@@ -60,6 +65,7 @@ const Slider = () => {
             fontWeight: fonts.weight.medium,
             color: colors.secondary.granite,
             marginBottom: "25px",
+            width:"368px"
           }}
         >
           Our designer already made a lot of beautiful prototype rooms that

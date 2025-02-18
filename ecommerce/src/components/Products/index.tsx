@@ -1,7 +1,9 @@
 "use client";
 
-import ItemCard from "@/components/Card";
 import { colors, fonts } from "@/themes";
+
+// Components
+import { ItemCard } from "..";
 
 const OurProduct = () => {
   return (

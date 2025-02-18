@@ -2,10 +2,13 @@
 
 
 import { Box, Flex } from "@radix-ui/themes";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+
+// Images
 import logo from "@/assets/Images/Logo.png";
 import cart from "@/assets/Images/Cart.png";
+
 import { colors, fonts } from "@/themes";
 
 const Header = () => {

@@ -14,30 +14,183 @@ exports[`Slider component matches snapshot 1`] = `
         50+ Beautiful rooms inspiration
       </h2>
       <p
-        style="font-size: 16px; font-weight: 500; color: rgb(102, 102, 102); margin-bottom: 25px;"
+        style="font-size: 16px; font-weight: 500; color: rgb(102, 102, 102); margin-bottom: 25px; width: 368px;"
       >
         Our designer already made a lot of beautiful prototype rooms that inspire you.
       </p>
       <button
-        style="padding: 12px 36px; font-size: 16px; font-weight: 600; text-align: center; width: auto; cursor: pointer; transition: all 0.3s ease; background-color: rgb(184, 142, 47); color: rgb(255, 255, 255);"
+        style="padding: 12px 36px; font-size: 16px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; background-color: rgb(184, 142, 47); color: rgb(255, 255, 255);"
       >
         Explore More
       </button>
     </aside>
     <aside
-      style="position: relative; width: 400px;"
+      style="position: relative; width: 650px; overflow: hidden;"
     >
-      <img
-        alt="slide-0"
-        data-nimg="1"
-        decoding="async"
-        height="400"
-        loading="lazy"
-        src="/_next/image?url=%2Fimg.jpg&w=828&q=75"
-        srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 1x, /_next/image?url=%2Fimg.jpg&w=828&q=75 2x"
-        style="color: transparent; width: 100%; height: auto; transition: opacity 0.5s ease-in-out;"
-        width="400"
-      />
+      <div
+        style="display: flex; transition: transform 0.5s ease-in-out; transform: translateX(-0%);"
+      >
+        <div
+          style="min-width: 70%; position: relative; display: flex;"
+        >
+          <img
+            alt="slide-0"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent; width: 400px; height: 582px; transition: opacity 0.5s ease-in-out;"
+            width="40"
+          />
+          <div
+            style="position: absolute; bottom: 30px; left: 24px; background: rgba(255, 255, 255, 0.722); padding: 30px 17px 32px 32px;"
+          >
+            <p
+              style="font-size: 16px; font-weight: 500; color: rgb(102, 102, 102);"
+            >
+              01 - Living Room
+            </p>
+            <p
+              style="font-size: 28px; font-weight: 600; color: rgb(58, 58, 58);"
+            >
+              Inner Peace
+            </p>
+            <img
+              alt="CTA"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent; right: -48px; position: absolute; bottom: 0px;"
+              width="40"
+            />
+          </div>
+        </div>
+        <div
+          style="min-width: 70%; position: relative; display: flex;"
+        >
+          <img
+            alt="slide-1"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent; width: 400px; height: 582px; transition: opacity 0.5s ease-in-out;"
+            width="40"
+          />
+          <div
+            style="position: absolute; bottom: 30px; left: 24px; background: rgba(255, 255, 255, 0.722); padding: 30px 17px 32px 32px;"
+          >
+            <p
+              style="font-size: 16px; font-weight: 500; color: rgb(102, 102, 102);"
+            >
+              02 - Bed Room
+            </p>
+            <p
+              style="font-size: 28px; font-weight: 600; color: rgb(58, 58, 58);"
+            >
+              Inner Peace
+            </p>
+            <img
+              alt="CTA"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent; right: -48px; position: absolute; bottom: 0px;"
+              width="40"
+            />
+          </div>
+        </div>
+        <div
+          style="min-width: 70%; position: relative; display: flex;"
+        >
+          <img
+            alt="slide-2"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent; width: 400px; height: 582px; transition: opacity 0.5s ease-in-out;"
+            width="40"
+          />
+          <div
+            style="position: absolute; bottom: 30px; left: 24px; background: rgba(255, 255, 255, 0.722); padding: 30px 17px 32px 32px;"
+          >
+            <p
+              style="font-size: 16px; font-weight: 500; color: rgb(102, 102, 102);"
+            >
+              03 - Dining Room
+            </p>
+            <p
+              style="font-size: 28px; font-weight: 600; color: rgb(58, 58, 58);"
+            >
+              Inner Peace
+            </p>
+            <img
+              alt="CTA"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent; right: -48px; position: absolute; bottom: 0px;"
+              width="40"
+            />
+          </div>
+        </div>
+        <div
+          style="min-width: 70%; position: relative; display: flex;"
+        >
+          <img
+            alt="slide-3"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent; width: 400px; height: 582px; transition: opacity 0.5s ease-in-out;"
+            width="40"
+          />
+          <div
+            style="position: absolute; bottom: 30px; left: 24px; background: rgba(255, 255, 255, 0.722); padding: 30px 17px 32px 32px;"
+          >
+            <p
+              style="font-size: 16px; font-weight: 500; color: rgb(102, 102, 102);"
+            >
+              04 - Office Room
+            </p>
+            <p
+              style="font-size: 28px; font-weight: 600; color: rgb(58, 58, 58);"
+            >
+              Inner Peace
+            </p>
+            <img
+              alt="CTA"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent; right: -48px; position: absolute; bottom: 0px;"
+              width="40"
+            />
+          </div>
+        </div>
+      </div>
       <img
         alt="arowSlider"
         data-nimg="1"
@@ -46,7 +199,7 @@ exports[`Slider component matches snapshot 1`] = `
         loading="lazy"
         src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
         srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-        style="color: transparent; position: absolute; top: 50%; right: -35px; transform: translateY(-50%); cursor: pointer;"
+        style="color: transparent; position: absolute; top: 50%; right: 0px; transform: translateY(-50%); cursor: pointer; width: 60px; height: 60px;"
         width="40"
       />
       <div
