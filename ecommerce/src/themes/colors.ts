@@ -4,6 +4,7 @@ const colors = {
   primary: {
     yellow: "#B88E2F",
     light: "#FFF3E3",
+    dark: "#F9F1E7",
     floral: "#FCF8F3"
   },
 
