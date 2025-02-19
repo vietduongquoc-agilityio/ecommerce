@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import ItemCard from "../index";
 
 // Mocking Next.js Image component
-jest.mock("next/image", () => ({ src, alt }: any) => <img src={src} alt={alt} />);
+// jest.mock("next/image", () => ({ src, alt }: any) => <img src={src} alt={alt} />);
 
 describe("ItemCard Snapshot Test", () => {
   it("renders correctly and matches snapshot", () => {
