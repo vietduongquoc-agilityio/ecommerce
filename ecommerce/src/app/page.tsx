@@ -3,26 +3,26 @@ import styles from "./page.module.css";
 
 // Components
 import {
-  Category,
+  // Category,
   Footer,
-  Funiro,
+  // Funiro,
   Header,
-  Hero,
-  OurProduct,
-  Slider,
+  // Hero,
+  // OurProduct,
+  // Slider,
 } from "@/components";
 
 const Home = () => {
   return (
     <Theme className={styles.page}>
       <Header />
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
         <Hero />
         <Category />
         <OurProduct />
         <Slider />
         <Funiro />
-      </main>
+      </main> */}
       <Footer />
     </Theme>
   );
