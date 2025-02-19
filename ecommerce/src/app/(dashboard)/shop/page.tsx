@@ -4,10 +4,10 @@ import styles from "@/app/page.module.css";
 // Components
 import {
   Achievement,
-  // FilterShowing,
+  FilterShowing,
   Footer,
   Header,
-  // ProductList,
+  ProductList,
   ShopBanner,
 } from "@/components";
 
@@ -17,8 +17,8 @@ const Shop = () => {
       <Header />
       <main className={styles.main}>
         <ShopBanner />
-        {/* <FilterShowing /> */}
-        {/* <ProductList /> */}
+        <FilterShowing />
+        <ProductList />
         <Achievement />
       </main>
       <Footer />

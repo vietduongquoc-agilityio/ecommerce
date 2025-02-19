@@ -8,8 +8,8 @@ import {
   Funiro,
   Header,
   Hero,
-  // OurProduct,
-  // Slider,
+  OurProduct,
+  Slider,
 } from "@/components";
 
 const Home = () => {
@@ -19,8 +19,8 @@ const Home = () => {
       <main className={styles.main}>
         <Hero />
         <Category />
-        {/* <OurProduct /> */}
-        {/* <Slider /> */}
+        <OurProduct />
+        <Slider />
         <Funiro />
       </main>
       <Footer />
