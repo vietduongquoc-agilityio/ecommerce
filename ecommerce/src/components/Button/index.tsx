@@ -12,10 +12,12 @@ interface ButtonProps {
     | "outline"
     | "ghost"
     | "disabled"
-    | "primaryXs";
+    | "primaryXs"
+    | "pagination";
   size?: "sm" | "md" | "lg";
   fullWidth?: boolean;
   fullHeight?: boolean;
+  style?: React.CSSProperties;
 }
 
 const Button = ({
@@ -25,6 +27,7 @@ const Button = ({
   size = "sm",
   fullWidth = false,
   fullHeight = false,
+  style = {},
 }: ButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -78,6 +81,12 @@ const Button = ({
       color: colors.white,
       opacity: 0.6,
     },
+    pagination: {
+      padding: "20px 25px",
+      borderRadius: "10px",
+      backgroundColor: isHovered ? "#B88E2F" : colors.primary.dark,
+      color: isHovered ? "#FFFFFF" : colors.secondary.black,
+    },
   };
 
   return (
@@ -85,7 +94,7 @@ const Button = ({
       onClick={variant !== "disabled" ? onClick : undefined}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ ...baseStyle, ...variantStyles[variant] }}
+      style={{ ...baseStyle, ...variantStyles[variant], ...style }}
     >
       {children}
     </button>

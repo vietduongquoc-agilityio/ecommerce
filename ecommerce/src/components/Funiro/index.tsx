@@ -7,11 +7,16 @@ import { colors, fonts } from "@/themes";
 
 const Funiro = () => {
   return (
-    <Box width="100%">
+    <Box
+      width="100%"
+      style={{
+        marginBottom: "200px",
+      }}
+    >
       <div
         style={{
           display: "flex",
-            justifyContent: "center",
+          justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
         }}

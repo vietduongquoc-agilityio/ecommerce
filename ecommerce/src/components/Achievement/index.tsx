@@ -12,7 +12,12 @@ interface ItemCardProps {
   description: string;
 }
 
-const AchievementItem: React.FC<ItemCardProps> = ({ image, alt, title, description }) => (
+const AchievementItem: React.FC<ItemCardProps> = ({
+  image,
+  alt,
+  title,
+  description,
+}) => (
   <li style={achievementItemStyle}>
     <Image src={image} alt={alt} />
     <div>
@@ -45,8 +50,8 @@ const Achievement = () => {
       style={{
         width: "100%",
         height: "auto",
+        marginBottom: "168px",
         background: colors.secondary.linen,
-        marginBottom: "-32px",
       }}
     >
       <ul

@@ -4,7 +4,7 @@ exports[`Funiro Component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="rt-Box rt-r-w"
-    style="--width: 100%;"
+    style="--width: 100%; margin-bottom: 200px;"
   >
     <div
       style="display: flex; justify-content: center; flex-direction: column; align-items: center;"

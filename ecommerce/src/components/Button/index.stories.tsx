@@ -16,6 +16,7 @@ const meta: Meta<typeof Button> = {
         "ghost",
         "disabled",
         "primaryXs",
+        "pagination"
       ],
     },
     size: {
@@ -63,5 +64,12 @@ export const FullWidth: Story = {
     children: "Full Width Button",
     variant: "primary",
     fullWidth: true,
+  },
+};
+
+export const Pagination: Story = {
+  args: {
+    children: "10",
+    variant: "pagination",
   },
 };

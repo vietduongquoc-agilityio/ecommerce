@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination Component renders correctly with default props 1`] = `
+<DocumentFragment>
+  <div
+    style="display: flex; align-items: center; gap: 38px; padding: 70px 0px;"
+  >
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(184, 142, 47); color: white;"
+    >
+      1
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: black;"
+    >
+      2
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: black;"
+    >
+      3
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: black;"
+    >
+      4
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: black;"
+    >
+      5
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: rgb(58, 58, 58);"
+    >
+      Next
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Pagination Component renders correctly with many pages 1`] = `
+<DocumentFragment>
+  <div
+    style="display: flex; align-items: center; gap: 38px; padding: 70px 0px;"
+  >
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: rgb(58, 58, 58);"
+    >
+      Previous
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: black;"
+    >
+      1
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: black;"
+    >
+      2
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(184, 142, 47); color: white;"
+    >
+      3
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: black;"
+    >
+      4
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: black;"
+    >
+      5
+    </button>
+    <span>
+      ...
+    </span>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: rgb(58, 58, 58);"
+    >
+      10
+    </button>
+    <button
+      style="padding: 20px 25px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; border-radius: 10px; background-color: rgb(249, 241, 231); color: rgb(58, 58, 58);"
+    >
+      Next
+    </button>
+  </div>
+</DocumentFragment>
+`;

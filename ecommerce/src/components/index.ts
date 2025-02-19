@@ -12,6 +12,7 @@ import FilterShowing from "./Filter";
 import ProductList from "./ListProduct";
 import Achievement from "./Achievement";
 import ErrorBoundaryWrapper from "./ErrorBoundary";
+import Pagination from "./Pagination";
 
 export {
   Button,
@@ -28,4 +29,5 @@ export {
   ProductList,
   Achievement,
   ErrorBoundaryWrapper,
+  Pagination
 };
