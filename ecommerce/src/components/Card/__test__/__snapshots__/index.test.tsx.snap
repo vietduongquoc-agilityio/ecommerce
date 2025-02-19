@@ -7,7 +7,14 @@ exports[`ItemCard Snapshot Test renders correctly and matches snapshot 1`] = `
   >
     <img
       alt="Syltherine"
-      src="/test-image.jpg"
+      data-nimg="1"
+      decoding="async"
+      height="300"
+      loading="lazy"
+      src="/_next/image?url=%2Ftest-image.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Ftest-image.jpg&w=384&q=75 1x, /_next/image?url=%2Ftest-image.jpg&w=640&q=75 2x"
+      style="color: transparent; object-fit: cover;"
+      width="285"
     />
     <div
       style="padding: 16px;"

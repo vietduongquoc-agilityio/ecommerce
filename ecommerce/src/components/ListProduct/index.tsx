@@ -6,6 +6,7 @@ import productService, { Product } from "@/services/productService";
 import { colors } from "@/themes";
 import { ItemCard } from "..";
 
+
 export default function ProductList() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
@@ -35,6 +36,7 @@ export default function ProductList() {
         gap: "20px",
         padding: "20px",
         backgroundColor: colors.white,
+        justifyItems: "center",
       }}
     >
       {products.map((product) => (
