@@ -1,5 +1,3 @@
-"use client";
-
 import { fonts, colors } from "@/themes";
 import Image, { StaticImageData } from "next/image";
 import Quality from "@/assets/Images/Shop-quality.png";

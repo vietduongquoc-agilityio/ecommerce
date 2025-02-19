@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Text } from "@radix-ui/themes";
 import { colors, fonts } from "@/themes";

@@ -1,6 +1,5 @@
 "use client";
 
-
 import { Box, Flex } from "@radix-ui/themes";
 import Link from "next/link";
 import Image from "next/image";

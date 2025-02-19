@@ -1,5 +1,3 @@
-"use client";
-
 import { Text } from "@radix-ui/themes";
 import { colors, fonts } from "@/themes";
 

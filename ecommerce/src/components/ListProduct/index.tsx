@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import productService, { Product } from "@/services/productService";
-
 import { colors } from "@/themes";
 import { ItemCard } from "..";
 
