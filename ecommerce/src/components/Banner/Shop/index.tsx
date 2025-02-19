@@ -1,5 +1,3 @@
-"use client";
-
 import Banner from "@/assets/Images/Banner.png";
 import Image from "next/image";
 import arrowDown from "@/assets/Images/Arrow-down.png";

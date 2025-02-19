@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { fonts, colors } from "@/themes";
 import filterIcon from "@/assets/Images/Filter.png";

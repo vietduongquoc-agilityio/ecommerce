@@ -39,7 +39,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "jest.setup.ts"
-  ],
+, "src/app/error.js"  ],
   "exclude": [
     "node_modules"
   ]
