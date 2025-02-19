@@ -2,9 +2,10 @@ import { Theme } from "@radix-ui/themes";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { ErrorBoundaryWrapper } from "@/components";
 
 const poppins = Poppins({
-  weight: ["400", "500", "600", "700"], // Regular, Medium, SemiBold, Bold
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-poppins",
 });
@@ -16,13 +17,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={poppins.variable}>
-        <Theme>{children}</Theme>
+        <Theme>
+          <ErrorBoundaryWrapper>{children}</ErrorBoundaryWrapper>
+        </Theme>
       </body>
     </html>
   );
