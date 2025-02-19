@@ -4,7 +4,7 @@ import styles from "@/app/page.module.css";
 // Components
 import {
   Achievement,
-  FilterShowing,
+  // FilterShowing,
   Footer,
   Header,
   // ProductList,
@@ -17,7 +17,7 @@ const Shop = () => {
       <Header />
       <main className={styles.main}>
         <ShopBanner />
-        <FilterShowing />
+        {/* <FilterShowing /> */}
         {/* <ProductList /> */}
         <Achievement />
       </main>

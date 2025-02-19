@@ -9,7 +9,7 @@ import {
   Header,
   Hero,
   // OurProduct,
-  Slider,
+  // Slider,
 } from "@/components";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
         <Hero />
         <Category />
         {/* <OurProduct /> */}
-        <Slider />
+        {/* <Slider /> */}
         <Funiro />
       </main>
       <Footer />
