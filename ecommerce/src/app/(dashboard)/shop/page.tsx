@@ -7,7 +7,7 @@ import {
   FilterShowing,
   Footer,
   Header,
-  // ProductList,
+  ProductList,
   ShopBanner,
 } from "@/components";
 
@@ -18,7 +18,7 @@ const Shop = () => {
       <main className={styles.main}>
         <ShopBanner />
         <FilterShowing />
-        {/* <ProductList /> */}
+        <ProductList />
         <Achievement />
       </main>
       <Footer />
