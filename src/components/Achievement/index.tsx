@@ -49,8 +49,6 @@ const Achievement = () => {
     <section
       style={{
         width: "100%",
-        height: "auto",
-        marginBottom: "168px",
         background: colors.secondary.linen,
       }}
     >

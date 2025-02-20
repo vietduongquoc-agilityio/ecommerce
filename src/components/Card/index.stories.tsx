@@ -12,7 +12,13 @@ export default meta;
 type Story = StoryObj<typeof ItemCard>;
 
 export const Default: Story = {
-  render: () => <ItemCard name={"Leviosa"} description={"Stylist cafa chair"} price={2500000} image={""} />,
+  render: () => (
+    <ItemCard
+      name={"Leviosa"}
+      description={"Stylist cafa chair"}
+      price={2500000}
+      image={""}
+      id={2}
+    />
+  ),
 };
-
-

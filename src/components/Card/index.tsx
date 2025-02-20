@@ -1,22 +1,26 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
-
-// Components
 import { Button } from "..";
 import { colors, fonts } from "@/themes";
 
-// Define props for ItemCard
 interface ItemCardProps {
+  id: number;
   name: string;
   description: string;
   price: number;
   image: string;
 }
 
-const ItemCard: React.FC<ItemCardProps> = ({ name, description, price, image }) => {
+const ItemCard: React.FC<ItemCardProps> = ({ id, name, description, price, image }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const router = useRouter();
+
+  const handleAddToCart = () => {
+    router.push(`/detail/${id}`);
+  };
 
   return (
     <article
@@ -32,18 +36,14 @@ const ItemCard: React.FC<ItemCardProps> = ({ name, description, price, image }) 
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Product Image */}
       <Image
         src={image}
         alt={name}
         width={285}
         height={300}
-        style={{
-          objectFit: "cover",
-        }}
+        style={{ objectFit: "cover" }}
       />
 
-      {/* Product Details */}
       <div style={{ padding: "16px" }}>
         <p
           style={{
@@ -76,7 +76,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ name, description, price, image }) 
         </p>
       </div>
 
-      {/* Overlay on Hover */}
       <div
         style={{
           position: "absolute",
@@ -92,7 +91,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ name, description, price, image }) 
           transition: "opacity 0.3s ease",
         }}
       >
-        <Button variant="secondary">Add to Cart</Button>
+        <Button variant="secondary" onClick={handleAddToCart}>Add to Cart</Button>
       </div>
     </article>
   );

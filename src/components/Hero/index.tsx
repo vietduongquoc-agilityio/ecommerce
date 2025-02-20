@@ -14,8 +14,9 @@ const Hero = () => {
       style={{
         position: "relative",
         width: "100%",
-        height: "auto",
         marginBottom: "50px",
+        height:"auto",
+        objectFit: "cover",
       }}
     >
       <div
@@ -82,7 +83,6 @@ const Hero = () => {
         alt="hero"
         style={{
           width: "100%",
-          height: "auto",
           display: "block",
         }}
       />
