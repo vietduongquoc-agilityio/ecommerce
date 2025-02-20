@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InformationProduct should match snapshot 1`] = `
+<DocumentFragment>
+  <section
+    style="width: 100%; max-width: 1100px; margin: 0px auto; padding: 55px 0px; display: flex; justify-content: space-between;"
+  >
+    <aside
+      style="display: flex; width: 555px; justify-content: space-between;"
+    >
+      <div
+        style="display: flex; flex-direction: column; height: 424px; justify-content: space-between;"
+      >
+        <img
+          alt="Product1"
+          data-nimg="1"
+          decoding="async"
+          height="85"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent; border-radius: 10px;"
+          width="80"
+        />
+        <img
+          alt="Product2"
+          data-nimg="1"
+          decoding="async"
+          height="85"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent; border-radius: 10px;"
+          width="80"
+        />
+        <img
+          alt="Product3"
+          data-nimg="1"
+          decoding="async"
+          height="85"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent; border-radius: 10px;"
+          width="80"
+        />
+        <img
+          alt="Product4"
+          data-nimg="1"
+          decoding="async"
+          height="85"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=96&q=75 1x, /_next/image?url=%2Fimg.jpg&w=256&q=75 2x"
+          style="color: transparent; border-radius: 10px;"
+          width="80"
+        />
+      </div>
+      <img
+        alt="living"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent; width: 423px; height: 506px; border-radius: 10px;"
+        width="40"
+      />
+    </aside>
+    <aside
+      style="width: 425px; height: 500px; display: flex; justify-content: space-between; flex-direction: column;"
+    >
+      <div>
+        <h2
+          style="color: rgb(0, 0, 0); font-weight: 400; font-size: 40px;"
+        >
+          Asgaard sofa
+        </h2>
+        <p
+          style="color: rgb(159, 159, 159); font-weight: 500; font-size: 24px;"
+        >
+          Rs. 250,000.00
+        </p>
+      </div>
+      <div>
+        <p
+          style="color: rgb(0, 0, 0); font-weight: 400; font-size: 13px; margin-bottom: 22px;"
+        >
+          Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
+        </p>
+        <div>
+          <p
+            style="color: rgb(159, 159, 159); font-weight: 400; font-size: 14px; margin-bottom: 12px;"
+          >
+            Size
+          </p>
+          <button
+            style="padding: 0px; font-size: 13px; font-weight: 400; text-align: center; width: 30px; height: 30px; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; background-color: rgb(249, 241, 231); color: rgb(58, 58, 58); margin-right: 16px;"
+          >
+            L
+          </button>
+          <button
+            style="padding: 0px; font-size: 13px; font-weight: 400; text-align: center; width: 30px; height: 30px; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; background-color: rgb(249, 241, 231); color: rgb(58, 58, 58); margin-right: 16px;"
+          >
+            XL
+          </button>
+          <button
+            style="padding: 0px; font-size: 13px; font-weight: 400; text-align: center; width: 30px; height: 30px; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; background-color: rgb(249, 241, 231); color: rgb(58, 58, 58); margin-right: 16px;"
+          >
+            XS
+          </button>
+        </div>
+      </div>
+      <div
+        style="display: flex;"
+      >
+        <div
+          style="display: flex; align-items: center; gap: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 15px; width: 123px; height: 65px; justify-content: space-between;"
+        >
+          <button
+            style="padding: 1px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: not-allowed; transition: all 0.3s ease; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); opacity: 0.5;"
+          >
+            -
+          </button>
+          <span
+            style="font-size: 18px; font-weight: bold;"
+          >
+            0
+          </span>
+          <button
+            style="padding: 1px; font-size: 18px; font-weight: 600; text-align: center; width: auto; height: auto; cursor: pointer; transition: all 0.3s ease; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"
+          >
+            +
+          </button>
+        </div>
+        <button
+          style="padding: 12px 52px; font-size: 20px; font-weight: 400; text-align: center; width: auto; height: 65px; cursor: pointer; transition: all 0.3s ease; border: 1px solid #000000; background-color: transparent; color: rgb(0, 0, 0); border-radius: 10px; margin-left: 20px;"
+        >
+          Add To Cart
+        </button>
+      </div>
+    </aside>
+  </section>
+</DocumentFragment>
+`;

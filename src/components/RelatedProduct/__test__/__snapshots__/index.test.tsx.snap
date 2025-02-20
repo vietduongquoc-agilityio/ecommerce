@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Related Snapshot Test renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <p>
+    Loading products...
+  </p>
+</DocumentFragment>
+`;

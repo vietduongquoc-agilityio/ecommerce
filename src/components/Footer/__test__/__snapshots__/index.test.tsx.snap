@@ -4,7 +4,7 @@ exports[`Footer Component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <footer
     class="footer"
-    style="width: 100%; border-top: 1px solid #D9D9D9; margin-top: 50px;"
+    style="width: 100%; border-top: 1px solid #D9D9D9;"
   >
     <div
       style="width: 100%; max-width: 1133px; display: flex; margin: 0px auto; padding: 48px;"
