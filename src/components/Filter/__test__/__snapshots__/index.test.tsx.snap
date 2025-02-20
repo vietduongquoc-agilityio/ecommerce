@@ -3,7 +3,7 @@
 exports[`FilterShowing Component matches snapshot 1`] = `
 <DocumentFragment>
   <section
-    style="width: 100%; height: auto; background: rgb(249, 241, 231); padding: 22px 100px; margin-top: -10px; display: flex; justify-content: space-between; align-items: center;"
+    style="width: 100%; height: auto; background: rgb(249, 241, 231); padding: 30px 100px; margin-top: -10px; display: flex; justify-content: space-between; align-items: center;"
   >
     <div
       style="display: flex; justify-content: space-between; width: 350px; height: 37px; align-items: center;"

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Button } from "..";
 import { colors, fonts } from "@/themes";
 
-interface ItemCardProps {
+export interface ItemCardProps {
   id: number;
   name: string;
   description: string;
@@ -14,7 +14,13 @@ interface ItemCardProps {
   image: string;
 }
 
-const ItemCard: React.FC<ItemCardProps> = ({ id, name, description, price, image }) => {
+const ItemCard: React.FC<ItemCardProps> = ({
+  id,
+  name,
+  description,
+  price,
+  image,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
 
@@ -91,7 +97,9 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, description, price, image
           transition: "opacity 0.3s ease",
         }}
       >
-        <Button variant="secondary" onClick={handleAddToCart}>Add to Cart</Button>
+        <Button variant="secondary" onClick={handleAddToCart}>
+          Add to Cart
+        </Button>
       </div>
     </article>
   );
