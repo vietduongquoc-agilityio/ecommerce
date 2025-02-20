@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ItemCard Snapshot Test renders correctly and matches snapshot 1`] = `
+exports[`ItemCard Component should render correctly and match snapshot 1`] = `
 <DocumentFragment>
   <article
     style="position: relative; width: 285px; height: 446px; background: rgb(244, 245, 247); overflow: hidden; cursor: pointer; margin-bottom: 32px;"
   >
     <img
-      alt="Syltherine"
+      alt="Test Product"
       data-nimg="1"
       decoding="async"
       height="300"
@@ -22,17 +22,17 @@ exports[`ItemCard Snapshot Test renders correctly and matches snapshot 1`] = `
       <p
         style="color: rgb(58, 58, 58); font-weight: 600; font-size: 24px; margin-bottom: 8px;"
       >
-        Syltherine
+        Test Product
       </p>
       <p
         style="color: rgb(159, 159, 159); font-weight: 500; font-size: 16px; margin-bottom: 8px;"
       >
-        Stylish cafe chair
+        This is a test product
       </p>
       <p
         style="color: rgb(58, 58, 58); font-weight: 600; font-size: 20px;"
       >
-        Rp 2.500.000
+        Rp 100.000
       </p>
     </div>
     <div

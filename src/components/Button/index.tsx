@@ -64,9 +64,9 @@ const Button = ({
       color: colors.primary.yellow,
     },
     outline: {
-      backgroundColor: isHovered ? colors.primary.yellow : "transparent",
-      border: `2px solid ${colors.primary.yellow}`,
-      color: isHovered ? colors.white : colors.primary.yellow,
+      backgroundColor: isHovered ? colors.white : "transparent",
+      border: isHovered ? `1px solid ${colors.secondary.splight}` :`1px solid ${colors.black}`,
+      color: isHovered ? colors.secondary.splight : colors.black,
     },
     ghost: {
       backgroundColor: "transparent",

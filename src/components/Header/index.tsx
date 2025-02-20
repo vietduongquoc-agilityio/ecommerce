@@ -26,7 +26,7 @@ const Header = () => {
       width="100%"
       maxWidth="1286px"
       style={{
-        padding: "30px 0",
+        height:"100px",
         margin: "0 auto",
       }}
     >
@@ -35,6 +35,7 @@ const Header = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          height:"100%"
         }}
       >
         {/* Logo */}

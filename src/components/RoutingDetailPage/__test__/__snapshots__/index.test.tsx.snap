@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RoutingDetailPage should render correctly and match snapshot 1`] = `
+<DocumentFragment>
+  <section
+    style="width: 100%; height: auto; background: rgb(249, 241, 231); padding: 30px 100px; display: flex; justify-content: space-between; align-items: center; margin-top: 10px;"
+  >
+    <div
+      style="display: flex; justify-content: space-between; width: 350px; height: 37px; align-items: center; font-size: 16px; font-weight: 400;"
+    >
+      <p
+        style="color: rgb(159, 159, 159);"
+      >
+        Home
+      </p>
+      <img
+        alt="arrowDown"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+      <p
+        style="color: rgb(159, 159, 159);"
+      >
+        Shop
+      </p>
+      <img
+        alt="arrowDown"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+      <img
+        alt="line"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+      <p
+        style="color: rgb(0, 0, 0);"
+      >
+        Asgaard sofa
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;

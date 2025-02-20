@@ -1,7 +1,6 @@
 import { Theme } from "@radix-ui/themes";
 import styles from "@/app/page.module.css";
-
-// Components
+import productService from "@/services/productService";
 import {
   DescriptionProduct,
   Footer,
@@ -11,7 +10,19 @@ import {
   RoutingDetailPage,
 } from "@/components";
 
-const ProductDetailPage = () => {
+export default async function ProductDetailPage({
+  params,
+}: {
+  params: Promise<{ id: number }>;
+}) {
+  const { id } = await params;
+  const product = await productService.getById(Number(id));
+  console.log(">>>>>>>>>>>>>>>>>",product);
+
+  if (!product) {
+    return <h1>Product not found</h1>;
+  }
+
   return (
     <Theme className={styles.page}>
       <Header />
@@ -24,6 +35,4 @@ const ProductDetailPage = () => {
       <Footer />
     </Theme>
   );
-};
-
-export default ProductDetailPage;
+}

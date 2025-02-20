@@ -1,11 +1,12 @@
 const colors = {
   white: "#FFFFFF",
+  black: "#000000",
 
   primary: {
     yellow: "#B88E2F",
     light: "#FFF3E3",
     dark: "#F9F1E7",
-    floral: "#FCF8F3"
+    floral: "#FCF8F3",
   },
 
   secondary: {
@@ -14,7 +15,7 @@ const colors = {
     granite: "#666666",
     light: "#D9D9D9",
     linen: "#FAF3EA",
-    splight: "#9F9F9F"
+    splight: "#9F9F9F",
   },
 
   success: {
@@ -34,4 +35,3 @@ const colors = {
 };
 
 export default colors;
-

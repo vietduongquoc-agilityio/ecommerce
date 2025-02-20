@@ -15,7 +15,6 @@ import { Button } from "..";
 
 // Components
 
-
 const images = [product1, product2, product3, product4];
 const roomNames = [
   "01 - Living Room",
@@ -41,153 +40,164 @@ const Slider = () => {
         width: "100%",
         height: "auto",
         background: colors.primary.light,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: "50px 100px",
+        padding: "50px 0",
         position: "relative",
-        marginTop:"150px",
-        marginBottom:"67px"
+        marginTop: "150px",
+        marginBottom: "67px",
       }}
     >
-      <aside style={{ maxWidth: "500px" }}>
-        <h2
-          style={{
-            fontSize: fonts.size.xxl,
-            fontWeight: fonts.weight.bold,
-            color: colors.secondary.black,
-            marginBottom: "10px",
-          }}
-        >
-          50+ Beautiful rooms inspiration
-        </h2>
-        <p
-          style={{
-            fontSize: fonts.size.xs,
-            fontWeight: fonts.weight.medium,
-            color: colors.secondary.granite,
-            marginBottom: "25px",
-            width:"368px"
-          }}
-        >
-          Our designer already made a lot of beautiful prototype rooms that
-          inspire you.
-        </p>
-        <Button variant="primaryXs" size="md">
-          Explore More
-        </Button>
-      </aside>
-
-      {/* Image Slider */}
-      <aside
-        style={{ position: "relative", width: "650px", overflow: "hidden" }}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "1240px",
+          margin: "0 auto"
+        }}
       >
-        <div
-          style={{
-            display: "flex",
-            transition: "transform 0.5s ease-in-out",
-            transform: `translateX(-${slideIndex * 100}%)`,
-          }}
+        <aside style={{ maxWidth: "500px" }}>
+          <h2
+            style={{
+              fontSize: fonts.size.xxl,
+              fontWeight: fonts.weight.bold,
+              color: colors.secondary.black,
+              marginBottom: "10px",
+            }}
+          >
+            50+ Beautiful rooms inspiration
+          </h2>
+          <p
+            style={{
+              fontSize: fonts.size.xs,
+              fontWeight: fonts.weight.medium,
+              color: colors.secondary.granite,
+              marginBottom: "25px",
+              width: "368px",
+            }}
+          >
+            Our designer already made a lot of beautiful prototype rooms that
+            inspire you.
+          </p>
+          <Button variant="primaryXs" size="md">
+            Explore More
+          </Button>
+        </aside>
+
+        {/* Image Slider */}
+        <aside
+          style={{ position: "relative", width: "650px", overflow: "hidden" }}
         >
-          {images.map((img, index) => (
-            <div
-              key={index}
-              style={{
-                minWidth: "70%",
-                position: "relative",
-                display: "flex",
-              }}
-            >
-              <Image
-                src={img}
-                alt={`slide-${index}`}
-                style={{
-                  width: "400px",
-                  height: "582px",
-                  transition: "opacity 0.5s ease-in-out",
-                }}
-              />
+          <div
+            style={{
+              display: "flex",
+              transition: "transform 0.5s ease-in-out",
+              transform: `translateX(-${slideIndex * 100}%)`,
+            }}
+          >
+            {images.map((img, index) => (
               <div
+                key={index}
                 style={{
-                  position: "absolute",
-                  bottom: "30px",
-                  left: "24px",
-                  background: "#FFFFFFB8",
-                  padding: "30px 17px 32px 32px",
+                  minWidth: "70%",
+                  position: "relative",
+                  display: "flex",
                 }}
               >
-                <p
-                  style={{
-                    fontSize: fonts.size.xs,
-                    fontWeight: fonts.weight.medium,
-                    color: colors.secondary.granite,
-                  }}
-                >
-                  {roomNames[index]}
-                </p>
-                <p
-                  style={{
-                    fontSize: "28px",
-                    fontWeight: fonts.weight.semiBold,
-                    color: colors.secondary.black,
-                  }}
-                >
-                  Inner Peace
-                </p>
                 <Image
-                  src={CTA}
-                  alt={"CTA"}
-                  style={{ right: "-48px", position: "absolute", bottom: "0" }}
+                  src={img}
+                  alt={`slide-${index}`}
+                  style={{
+                    width: "400px",
+                    height: "582px",
+                    transition: "opacity 0.5s ease-in-out",
+                  }}
                 />
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: "30px",
+                    left: "24px",
+                    background: "#FFFFFFB8",
+                    padding: "30px 17px 32px 32px",
+                  }}
+                >
+                  <p
+                    style={{
+                      fontSize: fonts.size.xs,
+                      fontWeight: fonts.weight.medium,
+                      color: colors.secondary.granite,
+                    }}
+                  >
+                    {roomNames[index]}
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "28px",
+                      fontWeight: fonts.weight.semiBold,
+                      color: colors.secondary.black,
+                    }}
+                  >
+                    Inner Peace
+                  </p>
+                  <Image
+                    src={CTA}
+                    alt={"CTA"}
+                    style={{
+                      right: "-48px",
+                      position: "absolute",
+                      bottom: "0",
+                    }}
+                  />
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Next Slide Button */}
-        <Image
-          src={arowSlider}
-          alt={"arowSlider"}
-          onClick={nextSlide}
-          style={{
-            position: "absolute",
-            top: "50%",
-            right: "0",
-            transform: "translateY(-50%)",
-            border: "none",
-            cursor: "pointer",
-            width: "60px",
-            height: "60px",
-          }}
-        />
+          {/* Next Slide Button */}
+          <Image
+            src={arowSlider}
+            alt={"arowSlider"}
+            onClick={nextSlide}
+            style={{
+              position: "absolute",
+              top: "50%",
+              right: "0",
+              transform: "translateY(-50%)",
+              border: "none",
+              cursor: "pointer",
+              width: "60px",
+              height: "60px",
+            }}
+          />
 
-        {/* Dots Indicators */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: "10px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            display: "flex",
-            gap: "5px",
-          }}
-        >
-          {images.map((_, index) => (
-            <span
-              key={index}
-              onClick={() => goToSlide(index)}
-              style={{
-                width: "10px",
-                height: "10px",
-                borderRadius: "50%",
-                background:
-                  index === slideIndex ? colors.primary.yellow : "white",
-                cursor: "pointer",
-              }}
-            />
-          ))}
-        </div>
-      </aside>
+          {/* Dots Indicators */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: "10px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              display: "flex",
+              gap: "5px",
+            }}
+          >
+            {images.map((_, index) => (
+              <span
+                key={index}
+                onClick={() => goToSlide(index)}
+                style={{
+                  width: "10px",
+                  height: "10px",
+                  borderRadius: "50%",
+                  background:
+                    index === slideIndex ? colors.primary.yellow : "white",
+                  cursor: "pointer",
+                }}
+              />
+            ))}
+          </div>
+        </aside>
+      </div>
     </section>
   );
 };

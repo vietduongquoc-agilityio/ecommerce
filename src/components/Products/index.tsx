@@ -17,6 +17,7 @@ const OurProduct = () => {
     async function fetchProducts() {
       try {
         const data = await productService.getAll();
+        console.log(">>>>", data);
         setProducts(data);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -60,6 +61,7 @@ const OurProduct = () => {
       >
         {products.slice(0, 8).map((product) => (
           <ItemCard
+            id={product.id}
             key={product.id}
             name={product.productName}
             description={product.description}

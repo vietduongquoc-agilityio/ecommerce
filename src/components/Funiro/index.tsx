@@ -7,9 +7,7 @@ import { colors, fonts } from "@/themes";
 
 const Funiro = () => {
   return (
-    <Box
-      width="100%"
-    >
+    <Box width="100%">
       <div
         style={{
           display: "flex",
@@ -41,7 +39,7 @@ const Funiro = () => {
       <Image
         src={funiro}
         alt="banner-funiro"
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", objectFit: "cover", marginBottom: "50px" }}
       />
     </Box>
   );

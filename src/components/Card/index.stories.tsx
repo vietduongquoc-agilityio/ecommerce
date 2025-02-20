@@ -1,18 +1,24 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { ItemCard } from "..";
+import { Meta, StoryFn } from "@storybook/react";
+import ItemCard from "./index";
 
-const meta: Meta<typeof ItemCard> = {
+export default {
   title: "Components/ItemCard",
   component: ItemCard,
-  tags: ["autodocs"],
+  argTypes: {
+    name: { control: "text" },
+    description: { control: "text" },
+    price: { control: "number" },
+    image: { control: "text" },
+  },
+} as Meta<typeof ItemCard>;
+
+const Template: StoryFn<typeof ItemCard> = (args) => <ItemCard {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  id: 1,
+  name: "Asgaard Sofa",
+  description: "A comfortable and stylish sofa",
+  price: 1200000,
+  image: "/test-image.jpg",
 };
-
-export default meta;
-
-type Story = StoryObj<typeof ItemCard>;
-
-export const Default: Story = {
-  render: () => <ItemCard name={"Leviosa"} description={"Stylist cafa chair"} price={2500000} image={""} />,
-};
-
-
