@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="rt-Box rt-r-w rt-r-max-w"
+    style="--width: 100%; --max-width: 1286px;"
+  >
+    <section
+      style="display: flex; justify-content: space-between; align-items: center;"
+    >
+      <div
+        class="rt-Box"
+      >
+        <img
+          alt="logo"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent; width: 170px; cursor: pointer; transition: transform 0.3s ease;"
+          width="40"
+        />
+      </div>
+      <div
+        class="rt-Flex rt-r-ai-center rt-r-jc-space-between rt-r-w"
+        style="--width: 430px;"
+      >
+        <a
+          href=""
+          style="font-size: 16px; font-weight: 500; padding: 0px 10px; text-decoration: none; color: rgb(58, 58, 58); transition: color 0.3s ease;"
+        >
+          Home
+        </a>
+        <a
+          href=""
+          style="font-size: 16px; font-weight: 500; padding: 0px 10px; text-decoration: none; color: rgb(58, 58, 58); transition: color 0.3s ease;"
+        >
+          Shop
+        </a>
+        <a
+          href=""
+          style="font-size: 16px; font-weight: 500; padding: 0px 10px; text-decoration: none; color: rgb(58, 58, 58); transition: color 0.3s ease;"
+        >
+          About
+        </a>
+        <a
+          href=""
+          style="font-size: 16px; font-weight: 500; padding: 0px 10px; text-decoration: none; color: rgb(58, 58, 58); transition: color 0.3s ease;"
+        >
+          Contact
+        </a>
+      </div>
+      <img
+        alt="cart-icon"
+        data-nimg="1"
+        decoding="async"
+        height="22"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+        style="color: transparent; cursor: pointer; transition: transform 0.3s ease;"
+        width="25"
+      />
+    </section>
+  </div>
+</DocumentFragment>
+`;
