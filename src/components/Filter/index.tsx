@@ -11,7 +11,7 @@ const FilterShowing = () => {
         height: "auto",
         background: colors.primary.dark,
         padding: "22px 100px",
-        marginTop: "-35px",
+        marginTop: "-10px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -50,8 +50,8 @@ const FilterShowing = () => {
           width: "450px",
         }}
       >
-        <div style={{ display: "flex", gap: "17px", alignItems: "center" }}>
-          <p>Show</p>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <p style={{ marginRight: "17px" }}>Show</p>
           <p
             style={{
               background: colors.white,
@@ -62,8 +62,8 @@ const FilterShowing = () => {
             16
           </p>
         </div>
-        <div style={{ display: "flex", gap: "17px", alignItems: "center" }}>
-          <p>Short by</p>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <p style={{ marginRight: "17px" }}>Short by</p>
           <p
             style={{
               background: colors.white,

@@ -9,9 +9,6 @@ const Funiro = () => {
   return (
     <Box
       width="100%"
-      style={{
-        marginBottom: "200px",
-      }}
     >
       <div
         style={{
@@ -41,7 +38,11 @@ const Funiro = () => {
           #FuniroFurniture
         </Text>
       </div>
-      <Image src={funiro} alt="banner-funiro" />
+      <Image
+        src={funiro}
+        alt="banner-funiro"
+        style={{ width: "100%", height: "100%" }}
+      />
     </Box>
   );
 };

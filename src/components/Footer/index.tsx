@@ -10,14 +10,17 @@ const Footer = () => {
       className="footer"
       style={{
         width: "100%",
-        maxWidth: "1440px",
         borderTop: "solid 1px #D9D9D9",
+        marginTop: "50px",
       }}
     >
       <div
         style={{
-          padding: "48px 206px 48px 100px",
+          width: "100%",
+          maxWidth: "1133px",
           display: "flex",
+          margin: "0 auto",
+          padding: "48px",
         }}
       >
         <div
@@ -92,7 +95,6 @@ const Footer = () => {
             display: "flex",
             flexDirection: "column",
             gap: "46px",
-
           }}
         >
           <Text className="address" style={{ color: colors.secondary.splight }}>
@@ -107,11 +109,7 @@ const Footer = () => {
                 border: "none",
               }}
             />
-            <Button
-              variant="ghost"
-            >
-              Subscribe
-            </Button>
+            <Button variant="ghost">Subscribe</Button>
           </form>
         </div>
       </div>
@@ -122,8 +120,8 @@ const Footer = () => {
           paddingBottom: "40px",
           borderTop: "solid 1px #D9D9D9",
           maxWidth: "1240px",
-          width:"100%",
-          margin: "0 auto"
+          width: "100%",
+          margin: "0 auto",
         }}
       >
         2023 Funiro. All rights reserved.

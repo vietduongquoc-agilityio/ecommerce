@@ -7,7 +7,7 @@ exports[`Category Component renders correctly and matches snapshot 1`] = `
     style="--width: 100%;"
   >
     <div
-      style="display: flex; justify-content: center; flex-direction: column; align-items: center;"
+      style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-bottom: 50px;"
     >
       <span
         class="rt-Text"
@@ -23,11 +23,11 @@ exports[`Category Component renders correctly and matches snapshot 1`] = `
       </span>
     </div>
     <div
-      style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 50px;"
+      style="display: flex; width: 1183px; justify-content: space-between; margin: 0px auto;"
     >
       <div
         class="rt-Box"
-        style="display: flex; flex-direction: column; align-items: center; gap: 30px; font-size: 24px; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;"
+        style="display: flex; flex-direction: column; align-items: center; font-size: 24px; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;"
       >
         <img
           alt="Dining-icon"
@@ -37,7 +37,7 @@ exports[`Category Component renders correctly and matches snapshot 1`] = `
           loading="lazy"
           src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
           srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-          style="color: transparent; width: 375px; height: 480px;"
+          style="color: transparent; width: 375px; height: 480px; border-radius: 10px; align-items: center;"
           width="40"
         />
         <p>
@@ -46,7 +46,7 @@ exports[`Category Component renders correctly and matches snapshot 1`] = `
       </div>
       <div
         class="rt-Box"
-        style="display: flex; flex-direction: column; align-items: center; gap: 30px; font-size: 24px; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;"
+        style="display: flex; flex-direction: column; align-items: center; font-size: 24px; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;"
       >
         <img
           alt="Living-icon"
@@ -56,7 +56,7 @@ exports[`Category Component renders correctly and matches snapshot 1`] = `
           loading="lazy"
           src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
           srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-          style="color: transparent; width: 375px; height: 480px;"
+          style="color: transparent; width: 375px; height: 480px; border-radius: 10px; align-items: center;"
           width="40"
         />
         <p>
@@ -65,7 +65,7 @@ exports[`Category Component renders correctly and matches snapshot 1`] = `
       </div>
       <div
         class="rt-Box"
-        style="display: flex; flex-direction: column; align-items: center; gap: 30px; font-size: 24px; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;"
+        style="display: flex; flex-direction: column; align-items: center; font-size: 24px; font-weight: 600; cursor: pointer; transition: transform 0.3s ease;"
       >
         <img
           alt="Bedroom-icon"
@@ -75,7 +75,7 @@ exports[`Category Component renders correctly and matches snapshot 1`] = `
           loading="lazy"
           src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
           srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-          style="color: transparent; width: 375px; height: 480px;"
+          style="color: transparent; width: 375px; height: 480px; border-radius: 10px; align-items: center;"
           width="40"
         />
         <p>

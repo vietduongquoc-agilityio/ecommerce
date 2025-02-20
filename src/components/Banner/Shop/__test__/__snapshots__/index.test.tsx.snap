@@ -3,10 +3,10 @@
 exports[`ShopBanner Component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <section
-    style="position: relative; width: 100%; height: auto;"
+    style="position: relative; width: 100%;"
   >
     <div
-      style="display: flex; justify-content: center; align-items: center; position: absolute; top: 121px; right: 658px; flex-direction: column;"
+      style="display: flex; justify-content: center; align-items: center; position: absolute; top: 50%; left: 50%; flex-direction: column;"
     >
       <h2
         style="font-size: 48px; font-weight: 500;"
@@ -51,7 +51,7 @@ exports[`ShopBanner Component renders correctly and matches snapshot 1`] = `
       loading="lazy"
       src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
       srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-      style="color: transparent; height: auto; display: block;"
+      style="color: transparent; width: 100%;"
       width="40"
     />
   </section>

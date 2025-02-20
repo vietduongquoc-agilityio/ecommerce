@@ -3,7 +3,7 @@
 exports[`Hero Component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <section
-    style="position: relative; width: 100%; height: auto;"
+    style="position: relative; width: 100%; height: auto; margin-bottom: 50px;"
   >
     <div
       style="display: flex; justify-content: center; flex-direction: column; background: rgb(255, 243, 227); width: 645px; padding: 62px 43px 37px 39px; position: absolute; top: 155px; right: 58px; height: 445px; border-radius: 10px;"

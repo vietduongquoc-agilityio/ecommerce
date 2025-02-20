@@ -3,7 +3,7 @@
 exports[`ItemCard Snapshot Test renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <article
-    style="position: relative; width: 285px; height: 446px; background: rgb(244, 245, 247); overflow: hidden; cursor: pointer;"
+    style="position: relative; width: 285px; height: 446px; background: rgb(244, 245, 247); overflow: hidden; cursor: pointer; margin-bottom: 32px;"
   >
     <img
       alt="Syltherine"

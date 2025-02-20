@@ -27,6 +27,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ name, description, price, image }) 
         background: "#F4F5F7",
         overflow: "hidden",
         cursor: "pointer",
+        marginBottom: "32px",
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

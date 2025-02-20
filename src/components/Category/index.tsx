@@ -18,6 +18,7 @@ const Category = () => {
           justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
+          marginBottom: "50px",
         }}
       >
         <Text
@@ -43,10 +44,9 @@ const Category = () => {
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "40px",
-          marginTop: "50px",
+          width: "1183px",
+          justifyContent: "space-between",  
+          margin: "0 auto",
         }}
       >
         {[
@@ -60,7 +60,6 @@ const Category = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap: "30px",
               fontSize: fonts.size.lg,
               fontWeight: fonts.weight.semiBold,
               cursor: "pointer",
@@ -77,6 +76,8 @@ const Category = () => {
               style={{
                 width: "375px",
                 height: "480px",
+                borderRadius: "10px",
+                alignItems: "center",
               }}
             />
             <p>{item.label}</p>
