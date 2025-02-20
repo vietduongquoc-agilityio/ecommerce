@@ -10,7 +10,7 @@ const FilterShowing = () => {
         width: "100%",
         height: "auto",
         background: colors.primary.dark,
-        padding: "22px 100px",
+        padding: "30px 100px",
         marginTop: "-10px",
         display: "flex",
         justifyContent: "space-between",

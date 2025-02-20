@@ -13,6 +13,10 @@ import ProductList from "./ListProduct";
 import Achievement from "./Achievement";
 import ErrorBoundaryWrapper from "./ErrorBoundary";
 import Pagination from "./Pagination";
+import RoutingDetailPage from "./RoutingDetailPage";
+import InformationProduct from "./InformationProduct";
+import DescriptionProduct from "./DescriptionProduct";
+import RelatedProduct from "./RelatedProduct";
 
 export {
   Button,
@@ -29,5 +33,9 @@ export {
   ProductList,
   Achievement,
   ErrorBoundaryWrapper,
-  Pagination
+  Pagination,
+  RoutingDetailPage,
+  InformationProduct,
+  DescriptionProduct,
+  RelatedProduct,
 };

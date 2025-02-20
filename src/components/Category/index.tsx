@@ -78,6 +78,7 @@ const Category = () => {
                 height: "480px",
                 borderRadius: "10px",
                 alignItems: "center",
+                marginBottom: "25px"
               }}
             />
             <p>{item.label}</p>

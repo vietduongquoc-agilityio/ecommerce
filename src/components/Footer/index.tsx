@@ -11,7 +11,6 @@ const Footer = () => {
       style={{
         width: "100%",
         borderTop: "solid 1px #D9D9D9",
-        marginTop: "50px",
       }}
     >
       <div
