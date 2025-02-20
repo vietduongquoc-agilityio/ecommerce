@@ -7,12 +7,9 @@
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
+  /* align-items: center; */
+  /* justify-items: center; */
+  /* min-height: 100svh; */
   font-family: var(--font-poppins);
 }
 
@@ -28,21 +25,21 @@
 }
 
 .main {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   gap: 32px;
-  grid-row-start: 2;
+  grid-row-start: 2; */
   font-family: var(--font-poppins);
 }
 
 .main ol {
   font-family: var(--font-poppins);
-  padding-left: 0;
+  /* padding-left: 0;
   margin: 0;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.01em;
-  list-style-position: inside;
+  list-style-position: inside; */
 }
 
 .main li:not(:last-of-type) {

@@ -34,8 +34,8 @@ const OurProduct = () => {
     <section
       style={{
         width: "100%",
-        maxWidth: "1300px",
-        margin: "auto",
+        maxWidth: "1260px",
+        margin: "0 auto",
       }}
     >
       <h2
@@ -45,6 +45,7 @@ const OurProduct = () => {
           fontWeight: fonts.weight.bold,
           fontSize: fonts.size.xxl,
           marginBottom: "32px",
+          marginTop: "56px",
         }}
       >
         Our Products
@@ -53,9 +54,8 @@ const OurProduct = () => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fill, minmax(285px, 1fr))",
-          gap: "32px",
-          justifyContent: "center",
-          padding: "0 15px",
+          justifyContent: "space-between",
+          marginLeft: "20px",
         }}
       >
         {products.slice(0, 8).map((product) => (

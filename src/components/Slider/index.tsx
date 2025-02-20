@@ -46,6 +46,8 @@ const Slider = () => {
         justifyContent: "space-between",
         padding: "50px 100px",
         position: "relative",
+        marginTop:"150px",
+        marginBottom:"67px"
       }}
     >
       <aside style={{ maxWidth: "500px" }}>

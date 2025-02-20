@@ -15,6 +15,7 @@ const Hero = () => {
         position: "relative",
         width: "100%",
         height: "auto",
+        marginBottom: "50px",
       }}
     >
       <div

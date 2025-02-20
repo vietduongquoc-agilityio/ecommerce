@@ -3,7 +3,7 @@
 import { Box, Flex } from "@radix-ui/themes";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation"; // Import useRouter để điều hướng
+import { useRouter } from "next/navigation";
 
 // Images
 import logo from "@/assets/Images/Logo.png";
@@ -22,7 +22,14 @@ const Header = () => {
   ];
 
   return (
-    <Box width="100%" maxWidth="1286px">
+    <Box
+      width="100%"
+      maxWidth="1286px"
+      style={{
+        padding: "30px 0",
+        margin: "0 auto",
+      }}
+    >
       <section
         style={{
           display: "flex",
@@ -44,7 +51,7 @@ const Header = () => {
               (e.currentTarget.style.transform = "scale(1.1)")
             }
             onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-            onClick={() => router.push("/")} 
+            onClick={() => router.push("/")}
           />
         </Box>
 

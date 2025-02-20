@@ -37,15 +37,13 @@ export default function ProductList() {
   );
 
   return (
-    <section>
+    <section style={{ width: "100%", maxWidth: "1260px", margin: "0 auto" }}>
       <div
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fill, minmax(285px, 1fr))",
-          gap: "20px",
-          padding: "20px",
+          paddingTop: "65px",
           backgroundColor: colors.white,
-          justifyItems: "center",
         }}
       >
         {displayedProducts.map((product) => (

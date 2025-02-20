@@ -9,7 +9,6 @@ const ShopBanner = () => {
       style={{
         position: "relative",
         width: "100%",
-        height: "auto",
       }}
     >
       <div
@@ -18,8 +17,8 @@ const ShopBanner = () => {
           justifyContent: "center",
           alignItems: "center",
           position: "absolute",
-          top: "121px",
-          right: "658px",
+          top: "50%",
+          left: "50%",
           flexDirection: "column",
         }}
       >
@@ -62,8 +61,7 @@ const ShopBanner = () => {
         src={Banner}
         alt={"shop-banner"}
         style={{
-          height: "auto",
-          display: "block",
+          width: "100%",
         }}
       />
     </section>
