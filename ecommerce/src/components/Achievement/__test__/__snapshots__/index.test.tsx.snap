@@ -3,7 +3,7 @@
 exports[`Achievement Component matches snapshot 1`] = `
 <DocumentFragment>
   <section
-    style="width: 100%; height: auto; background: rgb(250, 243, 234); margin-bottom: -32px;"
+    style="width: 100%; height: auto; margin-bottom: 168px; background: rgb(250, 243, 234);"
   >
     <ul
       style="padding: 100px 53px; list-style: none; display: flex; justify-content: space-between;"
