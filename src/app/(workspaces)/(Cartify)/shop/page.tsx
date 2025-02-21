@@ -1,5 +1,5 @@
 import { Theme } from "@radix-ui/themes";
-import styles from "@/app/page.module.css";
+import styles from "./page.module.css";
 
 // Components
 import {

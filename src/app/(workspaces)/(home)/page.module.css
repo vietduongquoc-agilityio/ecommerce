@@ -7,9 +7,6 @@
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
-  /* align-items: center; */
-  /* justify-items: center; */
-  /* min-height: 100svh; */
   font-family: var(--font-poppins);
 }
 
@@ -25,21 +22,11 @@
 }
 
 .main {
-  /* display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2; */
   font-family: var(--font-poppins);
 }
 
 .main ol {
   font-family: var(--font-poppins);
-  /* padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside; */
 }
 
 .main li:not(:last-of-type) {

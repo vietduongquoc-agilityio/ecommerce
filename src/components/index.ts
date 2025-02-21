@@ -17,6 +17,7 @@ import RoutingDetailPage from "./RoutingDetailPage";
 import InformationProduct from "./InformationProduct";
 import DescriptionProduct from "./DescriptionProduct";
 import RelatedProduct from "./RelatedProduct";
+import CartPopover from "./CartPopover";
 
 export {
   Button,
@@ -38,4 +39,5 @@ export {
   InformationProduct,
   DescriptionProduct,
   RelatedProduct,
+  CartPopover
 };
