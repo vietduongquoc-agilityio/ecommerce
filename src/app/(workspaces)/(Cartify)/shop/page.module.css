@@ -78,7 +78,6 @@ a.secondary {
   grid-row-start: 3;
   display: flex;
   gap: 24px;
-  padding: 80px;
 }
 
 .footer a {

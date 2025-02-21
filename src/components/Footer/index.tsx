@@ -19,7 +19,7 @@ const Footer = () => {
           maxWidth: "1133px",
           display: "flex",
           margin: "0 auto",
-          padding: "48px",
+          padding: "48px 0",
         }}
       >
         <div

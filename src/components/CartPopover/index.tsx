@@ -1,6 +1,7 @@
 "use client";
 
 import * as Dialog from "@radix-ui/react-dialog";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Cart from "@/assets/Images/Cart.png";
 import styles from "./styles.module.css";
@@ -12,6 +13,8 @@ import DeleteVector from "@/assets/Images/DeleteVector.png";
 import Button from "../Button";
 
 const CartPopover = () => {
+  const router = useRouter();
+
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
@@ -37,12 +40,14 @@ const CartPopover = () => {
             <Dialog.Close asChild>
               <Image
                 src={CartIcon}
-                alt={"CartIcon"}
+                alt="CartIcon"
                 className={styles.closeButton}
-              ></Image>
+              />
             </Dialog.Close>
           </div>
+
           <div style={{ padding: "40px" }}>
+            {/* Product 1 */}
             <div
               style={{
                 display: "flex",
@@ -53,13 +58,10 @@ const CartPopover = () => {
             >
               <Image
                 src={Product1}
-                alt={"Product1"}
+                alt="Product1"
                 style={{
                   width: "105px",
                   height: "105px",
-                  fontWeight: fonts.weight.regular,
-                  fontSize: fonts.size.xs,
-                  color: colors.black,
                   borderRadius: fonts.borderRadius.sm,
                 }}
               />
@@ -81,22 +83,8 @@ const CartPopover = () => {
                     alignItems: "center",
                   }}
                 >
-                  <p
-                    style={{
-                      fontWeight: "300",
-                      fontSize: fonts.size.xs,
-                    }}
-                  >
-                    1
-                  </p>
-                  <p
-                    style={{
-                      fontWeight: "300",
-                      fontSize: "12px",
-                    }}
-                  >
-                    X
-                  </p>
+                  <p style={{ fontWeight: "300", fontSize: fonts.size.xs }}>1</p>
+                  <p style={{ fontWeight: "300", fontSize: "12px" }}>X</p>
                   <p
                     style={{
                       fontWeight: fonts.weight.medium,
@@ -108,12 +96,10 @@ const CartPopover = () => {
                   </p>
                 </div>
               </div>
-              <Image
-                className={styles.cartIcon}
-                src={DeleteVector}
-                alt={"DeleteVector"}
-              />
+              <Image className={styles.cartIcon} src={DeleteVector} alt="DeleteVector" />
             </div>
+
+            {/* Product 2 */}
             <div
               style={{
                 display: "flex",
@@ -123,13 +109,10 @@ const CartPopover = () => {
             >
               <Image
                 src={Product2}
-                alt={"Product2"}
+                alt="Product2"
                 style={{
                   width: "105px",
                   height: "105px",
-                  fontWeight: fonts.weight.regular,
-                  fontSize: fonts.size.xs,
-                  color: colors.black,
                   borderRadius: fonts.borderRadius.sm,
                 }}
               />
@@ -151,22 +134,8 @@ const CartPopover = () => {
                     alignItems: "center",
                   }}
                 >
-                  <p
-                    style={{
-                      fontWeight: "300",
-                      fontSize: fonts.size.xs,
-                    }}
-                  >
-                    1
-                  </p>
-                  <p
-                    style={{
-                      fontWeight: "300",
-                      fontSize: "12px",
-                    }}
-                  >
-                    X
-                  </p>
+                  <p style={{ fontWeight: "300", fontSize: fonts.size.xs }}>1</p>
+                  <p style={{ fontWeight: "300", fontSize: "12px" }}>X</p>
                   <p
                     style={{
                       fontWeight: fonts.weight.medium,
@@ -178,12 +147,10 @@ const CartPopover = () => {
                   </p>
                 </div>
               </div>
-              <Image
-                className={styles.cartIcon}
-                src={DeleteVector}
-                alt={"DeleteVector"}
-              />
+              <Image className={styles.cartIcon} src={DeleteVector} alt="DeleteVector" />
             </div>
+
+            {/* Subtotal */}
             <div
               style={{
                 display: "flex",
@@ -212,6 +179,8 @@ const CartPopover = () => {
               </p>
             </div>
           </div>
+
+          {/* Action Buttons */}
           <div
             style={{
               width: "100%",
@@ -229,9 +198,11 @@ const CartPopover = () => {
                 fontSize: "12px",
                 marginRight: "20px",
               }}
+              onClick={() => router.push("/cart")}
             >
               Cart
             </Button>
+
             <Button
               variant="outline"
               style={{
@@ -240,6 +211,7 @@ const CartPopover = () => {
                 fontWeight: fonts.weight.regular,
                 fontSize: "12px",
               }}
+              onClick={() => router.push("/checkout")}
             >
               Checkout
             </Button>
