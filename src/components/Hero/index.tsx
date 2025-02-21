@@ -74,7 +74,7 @@ const Hero = () => {
           }}
         >
           <Button variant="primary" fullWidth fullHeight>
-            BY NOW
+            BUY NOW
           </Button>
         </div>
       </div>

@@ -31,11 +31,11 @@ describe("ItemCard Component", () => {
     expect(screen.getByText("Rp 100.000")).toBeInTheDocument();
   });
 
-  it("should navigate to product detail page when 'Add to Cart' is clicked", () => {
+  it("should navigate to product detail page when 'Add to cart' is clicked", () => {
     render(<ItemCard {...mockItem} />);
 
-    fireEvent.mouseEnter(screen.getByText("Test Product")); // Hover effect
-    const button = screen.getByText("Add to Cart");
+    fireEvent.mouseEnter(screen.getByText("Test Product")); 
+    const button = screen.getByText("Add to cart");
     fireEvent.click(button);
 
     expect(mockRouter.push).toHaveBeenCalledWith("/detail/1");

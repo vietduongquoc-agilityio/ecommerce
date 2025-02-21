@@ -24,7 +24,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
 
-  const handleAddToCart = () => {
+  const handleNavigateToDetail = () => {
     router.push(`/detail/${id}`);
   };
 
@@ -41,6 +41,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={handleNavigateToDetail}
     >
       <Image
         src={image}
@@ -95,10 +96,17 @@ const ItemCard: React.FC<ItemCardProps> = ({
           alignItems: "center",
           justifyContent: "center",
           transition: "opacity 0.3s ease",
+          pointerEvents: isHovered ? "auto" : "none",
         }}
       >
-        <Button variant="secondary" onClick={handleAddToCart}>
-          Add to Cart
+        <Button
+          variant="secondary"
+          onClick={(e) => {
+            e.stopPropagation();
+            handleNavigateToDetail();
+          }}
+        >
+          Add to cart
         </Button>
       </div>
     </article>

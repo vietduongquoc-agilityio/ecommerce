@@ -4,12 +4,13 @@ import { Box, Flex } from "@radix-ui/themes";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { colors, fonts } from "@/themes";
 
 // Images
 import logo from "@/assets/Images/Logo.png";
-import cart from "@/assets/Images/Cart.png";
 
-import { colors, fonts } from "@/themes";
+// Components
+import { CartPopover } from "..";
 
 const Header = () => {
   const router = useRouter();
@@ -84,16 +85,7 @@ const Header = () => {
           ))}
         </Flex>
 
-        {/* Cart Icon */}
-        <Image
-          src={cart}
-          width={25}
-          height={22}
-          alt="cart-icon"
-          style={{ cursor: "pointer", transition: "transform 0.3s ease" }}
-          onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
-          onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-        />
+        <CartPopover />
       </section>
     </Box>
   );
