@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListProductOfCart should match snapshot 1`] = `
+<DocumentFragment>
+  <section
+    style="width: 100%; max-width: 1240px; margin: 0px auto; background-color: rgb(255, 255, 255); padding: 72px 0px;"
+  >
+    <div
+      style="width: 100%; max-width: 817px; background: rgb(249, 241, 231); padding: 15px 135px; display: flex; justify-content: space-between; font-size: 16px; font-weight: 500; color: rgb(0, 0, 0); margin-bottom: 100px;"
+    >
+      <p
+        style="width: 39.1%;"
+      >
+        Product
+      </p>
+      <p
+        style="width: 21.7%;"
+      >
+        Price
+      </p>
+      <p
+        style="width: 12.9%;"
+      >
+        Quantity
+      </p>
+      <p>
+        Subtotal
+      </p>
+    </div>
+    <div
+      style="font-size: 16px; font-weight: 400; display: flex; width: 100%; max-width: 817px; justify-content: space-around;"
+    >
+      <img
+        alt="living"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent; width: 108px; height: 105px; border-radius: 10px;"
+        width="40"
+      />
+      <p
+        style="color: rgb(159, 159, 159);"
+      >
+        Asgaard sofa
+      </p>
+      <p
+        style="color: rgb(159, 159, 159);"
+      >
+        Rs. 250,000.00
+      </p>
+      <button
+        style="padding: 0px; font-size: 18px; font-weight: 600; text-align: center; width: 32px; height: 32px; cursor: pointer; transition: all 0.3s ease; border: 1px solid #000000; background-color: transparent; color: rgb(0, 0, 0); border-radius: 5px;"
+      >
+        1
+      </button>
+      <p>
+        Rs. 250,000.00
+      </p>
+      <img
+        alt="deleteIcon"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;

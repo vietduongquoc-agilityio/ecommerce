@@ -99,7 +99,6 @@ a {
 
 .ctas {
   display: flex;
-  gap: 16px;
 }
 
 .ctas a {
@@ -122,7 +121,6 @@ a {
 a.primary {
   background: var(--foreground);
   color: var(--background);
-  gap: 8px;
 }
 
 a.secondary {
@@ -132,15 +130,11 @@ a.secondary {
 
 .footer {
   grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-  padding: 80px;
 }
 
 .footer a {
   display: flex;
   align-items: center;
-  gap: 8px;
 }
 
 .footer img {
