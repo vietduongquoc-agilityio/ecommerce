@@ -18,6 +18,8 @@ import InformationProduct from "./InformationProduct";
 import DescriptionProduct from "./DescriptionProduct";
 import RelatedProduct from "./RelatedProduct";
 import CartPopover from "./CartPopover";
+import CartBanner from "./Banner/Cart";
+import ListProductOfCart from "./ListProductOfCart";
 
 export {
   Button,
@@ -39,5 +41,7 @@ export {
   InformationProduct,
   DescriptionProduct,
   RelatedProduct,
-  CartPopover
+  CartPopover,
+  CartBanner,
+  ListProductOfCart,
 };

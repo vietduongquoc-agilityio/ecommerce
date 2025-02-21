@@ -6,7 +6,7 @@ import { colors } from "@/themes";
 import { ItemCard } from "..";
 import Pagination from "@/components/Pagination";
 
-export default function ProductList() {
+const ProductList = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
@@ -70,4 +70,6 @@ export default function ProductList() {
       </div>
     </section>
   );
-}
+};
+
+export default ProductList;
