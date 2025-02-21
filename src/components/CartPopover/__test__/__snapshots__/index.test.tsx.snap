@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartPopover Component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <img
+    alt="cart-icon"
+    aria-controls="radix-:r0:"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    class="cartIcon"
+    data-nimg="1"
+    data-state="closed"
+    decoding="async"
+    height="22"
+    loading="lazy"
+    src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+    srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+    style="color: transparent;"
+    type="button"
+    width="25"
+  />
+</DocumentFragment>
+`;
