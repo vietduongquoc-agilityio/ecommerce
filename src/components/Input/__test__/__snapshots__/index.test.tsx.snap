@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Snapshot Test renders number input correctly 1`] = `
+<DocumentFragment>
+  <input
+    class="border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black undefined"
+    placeholder="Enter number"
+    type="number"
+  />
+</DocumentFragment>
+`;
+
+exports[`Input Snapshot Test renders text input correctly 1`] = `
+<DocumentFragment>
+  <input
+    class="border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black undefined"
+    placeholder="Enter text"
+    type="text"
+  />
+</DocumentFragment>
+`;

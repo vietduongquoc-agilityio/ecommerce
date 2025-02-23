@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { Text } from "@radix-ui/themes";
 import { colors, fonts } from "@/themes";
+import { useRouter } from "next/navigation";
 
 // Images
 import hero from "@/assets/Images/Hero.png";
@@ -9,13 +12,14 @@ import hero from "@/assets/Images/Hero.png";
 import { Button } from "..";
 
 const Hero = () => {
+  const router = useRouter();
   return (
     <section
       style={{
         position: "relative",
         width: "100%",
         marginBottom: "50px",
-        height:"auto",
+        height: "auto",
         objectFit: "cover",
       }}
     >
@@ -73,7 +77,12 @@ const Hero = () => {
             height: "75px",
           }}
         >
-          <Button variant="primary" fullWidth fullHeight>
+          <Button
+            variant="primary"
+            fullWidth
+            fullHeight
+            onClick={() => router.push("/detail")}
+          >
             BUY NOW
           </Button>
         </div>

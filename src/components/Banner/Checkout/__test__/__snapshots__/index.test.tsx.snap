@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckoutBanner Component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    style="position: relative; width: 100%;"
+  >
+    <div
+      style="display: flex; justify-content: center; align-items: center; position: absolute; top: 20%; left: 50%; flex-direction: column;"
+    >
+      <img
+        alt="LogoDetail"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+        style="color: transparent; width: 77px; height: 77px; margin-bottom: -15px;"
+        width="40"
+      />
+      <h2
+        style="font-size: 48px; font-weight: 500;"
+      >
+        Checkout
+      </h2>
+      <div
+        style="display: flex; height: 24px; width: 121px;"
+      >
+        <p
+          style="font-size: 16px; font-weight: 500; display: flex; align-items: center;"
+        >
+          Home
+          <span
+            style="padding: 8px; margin-top: 7px;"
+          >
+            <img
+              alt="arrowDown"
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+              style="color: transparent;"
+              width="40"
+            />
+          </span>
+        </p>
+        <p
+          style="font-size: 16px; font-weight: 300; display: flex; align-items: center;"
+        >
+          Checkout
+        </p>
+      </div>
+    </div>
+    <img
+      alt="shop-banner"
+      data-nimg="1"
+      decoding="async"
+      height="40"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+      style="color: transparent; width: 100%;"
+      width="40"
+    />
+  </section>
+</DocumentFragment>
+`;
