@@ -6,6 +6,7 @@ import Image from "next/image";
 import living from "@/assets/Images/Living.jpg";
 import deleteIcon from "@/assets/Images/DeleteIcon.png";
 import Button from "../Button";
+import styles from "../CartPopover/styles.module.css";
 
 const ListProductOfCart = () => {
   const router = useRouter();
@@ -77,7 +78,11 @@ const ListProductOfCart = () => {
             1
           </Button>
           <p>Rs. 250,000.00</p>
-          <Image src={deleteIcon} alt={"deleteIcon"} />
+          <Image
+            className={styles.cartIcon}
+            src={deleteIcon}
+            alt={"deleteIcon"}
+          />
         </div>
       </aside>
       <aside

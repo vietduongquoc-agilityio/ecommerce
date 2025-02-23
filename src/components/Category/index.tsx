@@ -2,6 +2,7 @@
 
 import { Box, Text } from "@radix-ui/themes";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 // Images
 import dining from "@/assets/Images/Dining.jpg";
@@ -10,6 +11,7 @@ import bed from "@/assets/Images/Bed-room.jpg";
 import { colors, fonts } from "@/themes";
 
 const Category = () => {
+  const router = useRouter();
   return (
     <Box width="100%">
       <div
@@ -45,7 +47,7 @@ const Category = () => {
         style={{
           display: "flex",
           width: "1183px",
-          justifyContent: "space-between",  
+          justifyContent: "space-between",
           margin: "0 auto",
         }}
       >
@@ -78,8 +80,9 @@ const Category = () => {
                 height: "480px",
                 borderRadius: "10px",
                 alignItems: "center",
-                marginBottom: "25px"
+                marginBottom: "25px",
               }}
+              onClick={() => router.push("/shop")}
             />
             <p>{item.label}</p>
           </Box>

@@ -1,9 +1,9 @@
 import { render } from "@testing-library/react";
-import ListProductOfCart from "../";
+import ListProductOfCard from "../";
 
-describe("ListProductOfCart", () => {
-  it("should match snapshot", () => {
-    const { asFragment } = render(<ListProductOfCart />);
+describe("ListProductOfCard Component", () => {
+  it("matches snapshot", () => {
+    const { asFragment } = render(<ListProductOfCard />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

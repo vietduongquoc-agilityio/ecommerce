@@ -20,6 +20,8 @@ import RelatedProduct from "./RelatedProduct";
 import CartPopover from "./CartPopover";
 import CartBanner from "./Banner/Cart";
 import ListProductOfCart from "./ListProductOfCart";
+import CheckOutBanner from "./Banner/Checkout";
+import BillingForm from "./Billing";
 
 export {
   Button,
@@ -44,4 +46,6 @@ export {
   CartPopover,
   CartBanner,
   ListProductOfCart,
+  CheckOutBanner,
+  BillingForm,
 };

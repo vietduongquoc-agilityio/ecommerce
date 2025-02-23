@@ -2,6 +2,7 @@
 
 import { SetStateAction, useState } from "react";
 import { colors, fonts } from "@/themes";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 // Images
@@ -11,9 +12,9 @@ import product2 from "@/assets/Images/Slider2.jpg";
 import product4 from "@/assets/Images/Slider3.webp";
 import arowSlider from "@/assets/Images/Arow-slider.png";
 import CTA from "@/assets/Images/CTA.png";
-import { Button } from "..";
 
 // Components
+import { Button } from "..";
 
 const images = [product1, product2, product3, product4];
 const roomNames = [
@@ -24,6 +25,7 @@ const roomNames = [
 ];
 
 const Slider = () => {
+  const router = useRouter();
   const [slideIndex, setSlideIndex] = useState(0);
 
   const nextSlide = () => {
@@ -52,7 +54,7 @@ const Slider = () => {
           alignItems: "center",
           justifyContent: "space-between",
           width: "1240px",
-          margin: "0 auto"
+          margin: "0 auto",
         }}
       >
         <aside style={{ maxWidth: "500px" }}>
@@ -78,7 +80,11 @@ const Slider = () => {
             Our designer already made a lot of beautiful prototype rooms that
             inspire you.
           </p>
-          <Button variant="primaryXs" size="md">
+          <Button
+            variant="primaryXs"
+            size="md"
+            onClick={() => router.push("/shop")}
+          >
             Explore More
           </Button>
         </aside>
@@ -147,6 +153,7 @@ const Slider = () => {
                       position: "absolute",
                       bottom: "0",
                     }}
+                    onClick={() => router.push("/shop")}
                   />
                 </div>
               </div>

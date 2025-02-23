@@ -15,7 +15,7 @@ export interface ItemCardProps {
 }
 
 const ItemCard: React.FC<ItemCardProps> = ({
-  id,
+  // id,
   name,
   description,
   price,
@@ -23,10 +23,6 @@ const ItemCard: React.FC<ItemCardProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
-
-  const handleNavigateToDetail = () => {
-    router.push(`/detail/${id}`);
-  };
 
   return (
     <article
@@ -41,7 +37,6 @@ const ItemCard: React.FC<ItemCardProps> = ({
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onClick={handleNavigateToDetail}
     >
       <Image
         src={image}
@@ -101,10 +96,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
       >
         <Button
           variant="secondary"
-          onClick={(e) => {
-            e.stopPropagation();
-            handleNavigateToDetail();
-          }}
+          onClick={() => router.push("/detail")}
         >
           Add to cart
         </Button>
