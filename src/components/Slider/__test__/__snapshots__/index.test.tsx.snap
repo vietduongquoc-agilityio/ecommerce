@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Slider component matches snapshot 1`] = `
+exports[`Slider Component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <section
     style="width: 100%; height: auto; background: rgb(255, 243, 227); padding: 50px 0px; position: relative; margin-top: 150px; margin-bottom: 67px;"

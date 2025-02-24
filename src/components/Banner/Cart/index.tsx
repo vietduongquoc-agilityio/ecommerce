@@ -19,6 +19,7 @@ const CartBanner = () => {
           alignItems: "center",
           position: "absolute",
           top: "20%",
+          right: "50%",
           left: "50%",
           flexDirection: "column",
         }}
