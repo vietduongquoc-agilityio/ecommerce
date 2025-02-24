@@ -5,8 +5,10 @@ import Input from "../Input";
 import { colors, fonts } from "@/themes";
 import styles from "../CartPopover/styles.module.css";
 import Button from "../Button";
+import { useRouter } from "next/navigation";
 
 const BillingForm = () => {
+    const router = useRouter();
   return (
     <section
       style={{
@@ -215,6 +217,7 @@ const BillingForm = () => {
               borderRadius: fonts.borderRadius.md,
               width: "318px",
             }}
+            onClick={() => router.push("/")}
           >
             Place order
           </Button>

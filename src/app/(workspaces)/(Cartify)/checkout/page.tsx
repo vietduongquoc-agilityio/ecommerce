@@ -17,7 +17,7 @@ const Cart = () => {
       <main className={styles.main}>
         <CheckOutBanner />
         <BillingForm />
-        <Achievement />
+        <Achievement /> 
       </main>
       <Footer />
     </Theme>

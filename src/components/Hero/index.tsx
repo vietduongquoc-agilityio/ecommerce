@@ -19,8 +19,6 @@ const Hero = () => {
         position: "relative",
         width: "100%",
         marginBottom: "50px",
-        height: "auto",
-        objectFit: "cover",
       }}
     >
       <div
@@ -29,11 +27,12 @@ const Hero = () => {
           justifyContent: "center",
           flexDirection: "column",
           background: colors.primary.light,
-          width: "645px",
-          padding: "62px 43px 37px 39px",
+          width: "590px",
+          padding: "62px 0 37px 30px",
           position: "absolute",
           top: "155px",
-          right: "58px",
+          right: "45%",
+          left:"55%",
           height: "445px",
           borderRadius: fonts.borderRadius.sm,
         }}
@@ -93,6 +92,7 @@ const Hero = () => {
         style={{
           width: "100%",
           display: "block",
+          objectFit: "cover",
         }}
       />
     </section>
