@@ -3,28 +3,27 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import Cart from "@/assets/Images/Cart.png";
 import styles from "./styles.module.css";
 import CartIcon from "@/assets/Images/CartIcon.png";
-import Product1 from "@/assets/Images/Product1.png";
-import Product2 from "@/assets/Images/Product2.png";
+// import Product1 from "@/assets/Images/Product1.png";
+// import Product2 from "@/assets/Images/Product2.png";
 import { colors, fonts } from "@/themes";
 import DeleteVector from "@/assets/Images/DeleteVector.png";
 import Button from "../Button";
+import { useCartStore } from "@/stores/cartStore";
 
 const CartPopover = () => {
   const router = useRouter();
+  const { cart } = useCartStore();
+
+  const calculateSubtotal = () => {
+    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  };
 
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <Image
-          src={Cart}
-          width={25}
-          height={22}
-          alt="cart-icon"
-          className={styles.cartIcon}
-        />
+        <Button variant="ghost">🛒 Cart ({cart.length})</Button>
       </Dialog.Trigger>
 
       <Dialog.Portal>
@@ -47,108 +46,70 @@ const CartPopover = () => {
           </div>
 
           <div style={{ padding: "40px" }}>
-            {/* Product 1 */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                marginBottom: "30px",
-                justifyContent: "space-between",
-              }}
-            >
-              <Image
-                src={Product1}
-                alt="Product1"
-                style={{
-                  width: "105px",
-                  height: "105px",
-                  borderRadius: fonts.borderRadius.sm,
-                }}
-              />
-              <div style={{ width: "130px" }}>
-                <p
-                  style={{
-                    fontWeight: fonts.weight.regular,
-                    fontSize: fonts.size.xs,
-                    color: colors.black,
-                  }}
-                >
-                  Asgaard sofa
-                </p>
+            {/* Cart Items */}
+            {cart.length > 0 ? (
+              cart.map((item) => (
                 <div
+                  key={item.documentId}
                   style={{
                     display: "flex",
-                    justifyContent: "space-between",
-                    marginTop: "15px",
                     alignItems: "center",
-                  }}
-                >
-                  <p style={{ fontWeight: "300", fontSize: fonts.size.xs }}>1</p>
-                  <p style={{ fontWeight: "300", fontSize: "12px" }}>X</p>
-                  <p
-                    style={{
-                      fontWeight: fonts.weight.medium,
-                      fontSize: "12px",
-                      color: colors.primary.yellow,
-                    }}
-                  >
-                    Rs. 250,000.00
-                  </p>
-                </div>
-              </div>
-              <Image className={styles.cartIcon} src={DeleteVector} alt="DeleteVector" />
-            </div>
-
-            {/* Product 2 */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <Image
-                src={Product2}
-                alt="Product2"
-                style={{
-                  width: "105px",
-                  height: "105px",
-                  borderRadius: fonts.borderRadius.sm,
-                }}
-              />
-              <div style={{ width: "130px" }}>
-                <p
-                  style={{
-                    fontWeight: fonts.weight.regular,
-                    fontSize: fonts.size.xs,
-                    color: colors.black,
-                  }}
-                >
-                  Living lamp
-                </p>
-                <div
-                  style={{
-                    display: "flex",
+                    marginBottom: "30px",
                     justifyContent: "space-between",
-                    marginTop: "15px",
-                    alignItems: "center",
                   }}
                 >
-                  <p style={{ fontWeight: "300", fontSize: fonts.size.xs }}>1</p>
-                  <p style={{ fontWeight: "300", fontSize: "12px" }}>X</p>
-                  <p
-                    style={{
-                      fontWeight: fonts.weight.medium,
-                      fontSize: "12px",
-                      color: colors.primary.yellow,
-                    }}
-                  >
-                    Rs. 250,000.00
-                  </p>
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    width={105}
+                    height={105}
+                    style={{ borderRadius: fonts.borderRadius.sm }}
+                  />
+                  <div style={{ width: "130px" }}>
+                    <p
+                      style={{
+                        fontWeight: fonts.weight.regular,
+                        fontSize: fonts.size.xs,
+                        color: colors.black,
+                      }}
+                    >
+                      {item.name}
+                    </p>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        marginTop: "15px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <p style={{ fontWeight: "300", fontSize: fonts.size.xs }}>
+                        {item.quantity}
+                      </p>
+                      <p style={{ fontWeight: "300", fontSize: "12px" }}>X</p>
+                      <p
+                        style={{
+                          fontWeight: fonts.weight.medium,
+                          fontSize: "12px",
+                          color: colors.primary.yellow,
+                        }}
+                      >
+                        Rs. {item.price.toLocaleString("id-ID")}
+                      </p>
+                    </div>
+                  </div>
+                  <Image
+                    className={styles.cartIcon}
+                    src={DeleteVector}
+                    alt="DeleteVector"
+                  />
                 </div>
-              </div>
-              <Image className={styles.cartIcon} src={DeleteVector} alt="DeleteVector" />
-            </div>
+              ))
+            ) : (
+              <p style={{ textAlign: "center", marginTop: "20px" }}>
+                Your cart is empty.
+              </p>
+            )}
 
             {/* Subtotal */}
             <div
@@ -156,7 +117,7 @@ const CartPopover = () => {
                 display: "flex",
                 justifyContent: "space-between",
                 width: "300px",
-                marginTop: "250px",
+                marginTop: "20px",
               }}
             >
               <p
@@ -175,7 +136,7 @@ const CartPopover = () => {
                   color: colors.primary.yellow,
                 }}
               >
-                Rs. 520,000.00
+                Rs. {calculateSubtotal().toLocaleString("id-ID")}
               </p>
             </div>
           </div>
