@@ -1,5 +1,6 @@
 import { Theme } from "@radix-ui/themes";
-import styles from "./page.module.css";
+import styles from "../page.module.css";
+import { getProductById } from "@/services/productService";
 
 // Components
 import {
@@ -11,13 +12,23 @@ import {
   RoutingDetailPage,
 } from "@/components";
 
-const ProductDetailPage = () => {
+const ProductDetailPage = async ({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) => {
+  const { id } = await params;
+
+  const product = await getProductById(id);
+
+  if (!product) return <>Loading...</>;
+
   return (
     <Theme className={styles.page}>
       <Header />
       <main className={styles.main}>
-        <RoutingDetailPage />
-        <InformationProduct />
+        <RoutingDetailPage product={product} />
+        <InformationProduct product={product} />
         <DescriptionProduct />
         <RelatedProduct />
       </main>

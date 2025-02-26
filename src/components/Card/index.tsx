@@ -5,17 +5,19 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Button } from "..";
 import { colors, fonts } from "@/themes";
+import { useCartStore } from "@/stores/cartStore";
 
 export interface ItemCardProps {
-  id: number;
+  id?: number;
   name: string;
   description: string;
   price: number;
   image: string;
+  documentId: string;
 }
 
 const ItemCard: React.FC<ItemCardProps> = ({
-  // id,
+  documentId,
   name,
   description,
   price,
@@ -23,6 +25,16 @@ const ItemCard: React.FC<ItemCardProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
+  const addToCart = useCartStore((state) => state.addToCart);
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    addToCart({ documentId, name, price, image });
+  };
+  
+  const handleNavigateToDetail = () => {
+    router.push(`/detail/${documentId}`);
+  };
 
   return (
     <article
@@ -37,6 +49,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={handleNavigateToDetail}
     >
       <Image
         src={image}
@@ -94,10 +107,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
           pointerEvents: isHovered ? "auto" : "none",
         }}
       >
-        <Button
-          variant="secondary"
-          onClick={() => router.push("/detail")}
-        >
+        <Button variant="secondary" onClick={handleAddToCart}>
           Add to cart
         </Button>
       </div>

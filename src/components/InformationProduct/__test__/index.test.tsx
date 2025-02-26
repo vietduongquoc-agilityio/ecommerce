@@ -3,7 +3,7 @@ import InformationProduct from "../";
 
 describe("InformationProduct", () => {
   it("should match snapshot", () => {
-    const { asFragment } = render(<InformationProduct />);
+    const { asFragment } = render(<InformationProduct product={undefined} />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

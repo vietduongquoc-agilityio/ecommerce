@@ -2,8 +2,13 @@ import Image from "next/image";
 import { fonts, colors } from "@/themes";
 import arrowDown from "@/assets/Images/Arrow-down.png";
 import line from "@/assets/Images/Line.png";
+import { Product } from "@/Interface/product";
 
-const RoutingDetailPage = () => {
+interface RoutingDetailPageProps {
+  product: Product;
+}
+
+const RoutingDetailPage = ({ product }: RoutingDetailPageProps) => {
   return (
     <section
       style={{
@@ -50,7 +55,7 @@ const RoutingDetailPage = () => {
             color: colors.black,
           }}
         >
-          Asgaard sofa
+          {product.productName}
         </p>
       </div>
     </section>
