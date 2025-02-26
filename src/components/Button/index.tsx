@@ -71,7 +71,6 @@ const Button = ({
     ghost: {
       backgroundColor: "transparent",
       color: colors.secondary.black,
-      cursor: "not-allowed",
       fontSize: fonts.size.xs,
       padding: "1px",
       fontWeight: fonts.weight.medium,

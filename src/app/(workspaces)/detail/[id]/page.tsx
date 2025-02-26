@@ -28,7 +28,13 @@ const ProductDetailPage = async ({
       <Header />
       <main className={styles.main}>
         <RoutingDetailPage product={product} />
-        <InformationProduct product={product} />
+        <InformationProduct
+          name={product.productName}
+          description={product.description}
+          price={product.price}
+          image={product.image}
+          documentId={product.documentId}
+        />
         <DescriptionProduct />
         <RelatedProduct />
       </main>

@@ -1,3 +1,5 @@
+"use client";
+
 import { colors, fonts } from "@/themes";
 import Image from "next/image";
 import Button from "../Button";
@@ -5,15 +7,23 @@ import Product1 from "@/assets/Images/Product1.png";
 import Product2 from "@/assets/Images/Product2.png";
 import Product3 from "@/assets/Images/Product3.png";
 import Product4 from "@/assets/Images/Product4.png";
-import living from "@/assets/Images/Living.jpg";
 import QuantitySelector from "@/utils/QuantitySelector";
-import { Product } from "@/Interface/product";
+import { useCartStore } from "@/stores/cartStore";
+import { ItemCardProps } from "@/Interface/itemCard";
 
-interface InformationProductProps {
-  product: Product;
-}
+const InformationProduct = ({
+  documentId,
+  name,
+  price,
+  image,
+}: ItemCardProps) => {
+  const addToCart = useCartStore((state) => state.addToCart);
 
-const InformationProduct = ({ product }: InformationProductProps) => {
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    addToCart({ documentId, name, price, image, quantity: 1 });
+  };
+
   return (
     <section
       style={{
@@ -44,7 +54,7 @@ const InformationProduct = ({ product }: InformationProductProps) => {
             <Image
               key={index}
               src={src}
-              alt={`Product${index + 1}`}
+              alt={`Product ${index + 1}`}
               width={80}
               height={85}
               style={{ borderRadius: fonts.borderRadius.sm }}
@@ -52,13 +62,11 @@ const InformationProduct = ({ product }: InformationProductProps) => {
           ))}
         </div>
         <Image
-          src={living}
-          alt={"living"}
-          style={{
-            width: "423px",
-            height: "506px",
-            borderRadius: "10px",
-          }}
+          src={image}
+          alt={name}
+          width={423}
+          height={506}
+          style={{ borderRadius: "10px" }}
         />
       </aside>
       <aside
@@ -78,7 +86,7 @@ const InformationProduct = ({ product }: InformationProductProps) => {
               fontSize: fonts.size.xxl,
             }}
           >
-            {product.productName}
+            {name}
           </h2>
           <p
             style={{
@@ -87,7 +95,7 @@ const InformationProduct = ({ product }: InformationProductProps) => {
               fontSize: fonts.size.lg,
             }}
           >
-            Rs. {product.price.toLocaleString("id-ID")}
+            Rs. {price.toLocaleString("id-ID")}
           </p>
         </div>
         <div>
@@ -144,6 +152,7 @@ const InformationProduct = ({ product }: InformationProductProps) => {
               height: "65px",
               marginLeft: "20px",
             }}
+            onClick={handleAddToCart}
           >
             Add To Cart
           </Button>

@@ -6,15 +6,7 @@ import Image from "next/image";
 import { Button } from "..";
 import { colors, fonts } from "@/themes";
 import { useCartStore } from "@/stores/cartStore";
-
-export interface ItemCardProps {
-  id?: number;
-  name: string;
-  description: string;
-  price: number;
-  image: string;
-  documentId: string;
-}
+import { ItemCardProps } from "@/Interface/itemCard";
 
 const ItemCard: React.FC<ItemCardProps> = ({
   documentId,
@@ -29,9 +21,9 @@ const ItemCard: React.FC<ItemCardProps> = ({
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
-    addToCart({ documentId, name, price, image });
+    addToCart({ documentId, name, price, image, quantity: 1 });
   };
-  
+
   const handleNavigateToDetail = () => {
     router.push(`/detail/${documentId}`);
   };

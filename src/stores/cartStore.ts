@@ -5,6 +5,7 @@ interface CartItem {
   name: string;
   price: number;
   image: string;
+  quantity: number;
 }
 
 interface CartState {
@@ -15,7 +16,23 @@ interface CartState {
 export const useCartStore = create<CartState>((set) => ({
   cart: [],
   addToCart: (item) =>
-    set((state) => ({
-      cart: [...state.cart, item],
-    })),
+    set((state) => {
+      const existingItem = state.cart.find(
+        (i) => i.documentId === item.documentId
+      );
+
+      if (existingItem) {
+        return {
+          cart: state.cart.map((i) =>
+            i.documentId === item.documentId
+              ? { ...i, quantity: i.quantity + 1 }
+              : i
+          ),
+        };
+      }
+
+      return {
+        cart: [...state.cart, { ...item, quantity: 1 }],
+      };
+    }),
 }));
