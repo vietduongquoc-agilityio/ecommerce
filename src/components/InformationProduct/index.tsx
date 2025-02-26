@@ -10,6 +10,7 @@ import Product4 from "@/assets/Images/Product4.png";
 import QuantitySelector from "@/utils/QuantitySelector";
 import { useCartStore } from "@/stores/cartStore";
 import { ItemCardProps } from "@/Interface/itemCard";
+import { toast } from "react-toastify";
 
 const InformationProduct = ({
   documentId,
@@ -22,6 +23,7 @@ const InformationProduct = ({
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
     addToCart({ documentId, name, price, image, quantity: 1 });
+    toast.success("Item added to cart successfully!");
   };
 
   return (

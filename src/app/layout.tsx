@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ErrorBoundaryWrapper } from "@/components";
+import { Bounce, ToastContainer } from "react-toastify";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -25,6 +26,19 @@ export default function RootLayout({
       <body className={poppins.variable}>
         <Theme>
           <ErrorBoundaryWrapper>{children}</ErrorBoundaryWrapper>
+          <ToastContainer
+            position="bottom-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            transition={Bounce}
+          />
         </Theme>
       </body>
     </html>
