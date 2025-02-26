@@ -7,6 +7,7 @@ import { Button } from "..";
 import { colors, fonts } from "@/themes";
 import { useCartStore } from "@/stores/cartStore";
 import { ItemCardProps } from "@/Interface/itemCard";
+import { toast } from "react-toastify";
 
 const ItemCard: React.FC<ItemCardProps> = ({
   documentId,
@@ -22,6 +23,9 @@ const ItemCard: React.FC<ItemCardProps> = ({
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
     addToCart({ documentId, name, price, image, quantity: 1 });
+    toast.success("Item added to cart successfully!");
+    console.log(toast.success);
+    
   };
 
   const handleNavigateToDetail = () => {
