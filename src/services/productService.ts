@@ -1,43 +1,43 @@
-import apiClient from "./apiClient";
+import axios from "axios";
 
-export interface Product {
-  id: number;
-  productName: string;
-  category: string;
-  price: number;
-  quantity: number;
-  size: string;
-  description: string;
-  image: string;
-}
+import { Product } from "@/Interface/product";
 
-const productService = {
-  getAll: async (): Promise<Product[]> => {
-    const response = await apiClient.get("/products");
-    return response.data.data;
-  },
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
-  getById: async (productId: number): Promise<Product> => {
-    const response = await apiClient.get(`/products/${productId}`);
-    return response.data;
-  },
-
-  create: async (product: Omit<Product, "productId">): Promise<Product> => {
-    const response = await apiClient.post("/products", product);
-    return response.data;
-  },
-
-  update: async (
-    productId: number,
-    product: Partial<Product>
-  ): Promise<Product> => {
-    const response = await apiClient.put(`/products/${productId}`, product);
-    return response.data;
-  },
-
-  delete: async (productId: number): Promise<void> => {
-    await apiClient.delete(`/products/${productId}`);
-  },
+export const getAllProducts = async (): Promise<Product[]> => {
+  const response = await axios.get(`${BASE_URL}/products`);
+  return response.data.data;
 };
 
-export default productService;
+export const getProductById = async (documentId: string): Promise<Product> => {
+  try {
+    const response = await axios.get(`${BASE_URL}/products/${documentId}`);
+
+    return response.data.data;
+  } catch (error) {
+    console.error("Error in getProductById:", error);
+    throw error;
+  }
+};
+
+export const createProduct = async (
+  product: Omit<Product, "documentId">
+): Promise<Product> => {
+  const response = await axios.post(`${BASE_URL}/products`, product);
+  return response.data;
+};
+
+export const updateProduct = async (
+  productId: string,
+  product: Partial<Product>
+): Promise<Product> => {
+  const response = await axios.put(
+    `${BASE_URL}/products/${productId}`,
+    product
+  );
+  return response.data;
+};
+
+export const deleteProduct = async (productId: number): Promise<void> => {
+  await axios.delete(`${BASE_URL}/products/${productId}`);
+};

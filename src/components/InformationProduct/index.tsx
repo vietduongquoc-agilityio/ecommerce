@@ -7,8 +7,13 @@ import Product3 from "@/assets/Images/Product3.png";
 import Product4 from "@/assets/Images/Product4.png";
 import living from "@/assets/Images/Living.jpg";
 import QuantitySelector from "@/utils/QuantitySelector";
+import { Product } from "@/Interface/product";
 
-const InformationProduct = () => {
+interface InformationProductProps {
+  product: Product;
+}
+
+const InformationProduct = ({ product }: InformationProductProps) => {
   return (
     <section
       style={{
@@ -73,7 +78,7 @@ const InformationProduct = () => {
               fontSize: fonts.size.xxl,
             }}
           >
-            Asgaard sofa
+            {product.productName}
           </h2>
           <p
             style={{
@@ -82,7 +87,7 @@ const InformationProduct = () => {
               fontSize: fonts.size.lg,
             }}
           >
-            Rs. 250,000.00
+            Rs. {product.price.toLocaleString("id-ID")}
           </p>
         </div>
         <div>
@@ -119,7 +124,7 @@ const InformationProduct = () => {
                   fontSize: "13px",
                   borderRadius: "5px",
                   marginRight: "16px",
-                  fontWeight:fonts.weight.regular,
+                  fontWeight: fonts.weight.regular,
                   padding: "0",
                 }}
               >

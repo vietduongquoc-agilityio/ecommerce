@@ -8,7 +8,7 @@ import Button from "../Button";
 import { useRouter } from "next/navigation";
 
 const BillingForm = () => {
-    const router = useRouter();
+  const router = useRouter();
   return (
     <section
       style={{

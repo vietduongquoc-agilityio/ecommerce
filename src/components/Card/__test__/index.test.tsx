@@ -26,7 +26,7 @@ describe("ItemCard Component", () => {
   };
 
   it("should render correctly and match snapshot", () => {
-    const { asFragment } = render(<ItemCard id={0} {...mockItem} />);
+    const { asFragment } = render(<ItemCard documentId={""} id={0} {...mockItem} />);
     expect(asFragment()).toMatchSnapshot();
   });
 

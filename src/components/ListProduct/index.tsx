@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import productService, { Product } from "@/services/productService";
+import { getAllProducts } from "@/services/productService";
 import { colors } from "@/themes";
 import { ItemCard } from "..";
 import Pagination from "@/components/Pagination";
+import { Product } from "@/Interface/product";
 
 const ProductList = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -15,7 +16,7 @@ const ProductList = () => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const data = await productService.getAll();
+        const data = await getAllProducts();
         setProducts(data);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -48,12 +49,13 @@ const ProductList = () => {
       >
         {displayedProducts.map((product) => (
           <ItemCard
-            key={product.id}
+            key={product.documentId}
             id={product.id}
             name={product.productName}
             description={product.description}
             price={product.price}
             image={product.image}
+            documentId={product.documentId}
           />
         ))}
       </div>
