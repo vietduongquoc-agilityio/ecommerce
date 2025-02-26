@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 import { colors, fonts } from "@/themes";
 
 // Services
-import productService, { Product } from "@/services/productService";
+import { getAllProducts } from "@/services/productService";
 
 // Components
 import { ItemCard } from "..";
+import { Product } from "@/Interface/product";
 
 const RelatedProduct = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -16,7 +17,7 @@ const RelatedProduct = () => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const data = await productService.getAll();
+        const data = await getAllProducts();
         setProducts(data);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -66,7 +67,7 @@ const RelatedProduct = () => {
             description={product.description}
             price={product.price}
             image={product.image}
-            id={product.id}
+            documentId={product.documentId}
           />
         ))}
       </div>

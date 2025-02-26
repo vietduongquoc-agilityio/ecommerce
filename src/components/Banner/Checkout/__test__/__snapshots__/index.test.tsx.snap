@@ -6,7 +6,7 @@ exports[`CheckoutBanner Component renders correctly and matches snapshot 1`] = `
     style="position: relative; width: 100%;"
   >
     <div
-      style="display: flex; justify-content: center; align-items: center; position: absolute; top: 20%; left: 50%; flex-direction: column;"
+      style="display: flex; justify-content: center; align-items: center; position: absolute; top: 20%; right: 50%; left: 50%; flex-direction: column;"
     >
       <img
         alt="LogoDetail"

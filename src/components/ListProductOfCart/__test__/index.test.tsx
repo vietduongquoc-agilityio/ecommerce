@@ -1,9 +1,20 @@
 import { render } from "@testing-library/react";
-import ListProductOfCard from "../";
+import ListProductOfCart from "../index";
+import { useRouter } from "next/navigation";
 
-describe("ListProductOfCard Component", () => {
-  it("matches snapshot", () => {
-    const { asFragment } = render(<ListProductOfCard />);
+jest.mock("next/navigation", () => ({
+  useRouter: jest.fn(),
+}));
+
+const mockPush = jest.fn();
+describe("ListProductOfCart Component", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+
+    (useRouter as jest.Mock).mockReturnValue({ push: mockPush });
+  });
+  it("renders correctly and matches snapshot", () => {
+    const { asFragment } = render(<ListProductOfCart />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

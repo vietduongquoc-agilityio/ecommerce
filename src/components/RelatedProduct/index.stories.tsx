@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import RelatedProduct from "../RoutingDetailPage";
-import { Product } from "@/services/productService";
+import { Product } from "@/Interface/product";
 
 const mockProducts: Product[] = [
   {
@@ -12,6 +12,7 @@ const mockProducts: Product[] = [
     category: "",
     quantity: 0,
     size: "",
+    documentId: ""
   },
   {
     productName: "Modern Chair",
@@ -22,6 +23,7 @@ const mockProducts: Product[] = [
     category: "",
     quantity: 0,
     size: "",
+    documentId: ""
   },
   {
     productName: "Wooden Table",
@@ -32,6 +34,7 @@ const mockProducts: Product[] = [
     category: "",
     quantity: 0,
     size: "",
+    documentId: ""
   },
   {
     productName: "Bed Frame",
@@ -42,6 +45,7 @@ const mockProducts: Product[] = [
     category: "",
     quantity: 0,
     size: "",
+    documentId: ""
   },
 ];
 

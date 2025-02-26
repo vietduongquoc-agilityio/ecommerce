@@ -23,6 +23,9 @@ importers:
       '@radix-ui/themes':
         specifier: ^3.2.0
         version: 3.2.0(@types/react-dom@19.0.4(@types/react@19.0.10))(@types/react@19.0.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@storybook/addon-links':
+        specifier: ^8.5.8
+        version: 8.5.8(react@19.0.0)(storybook@8.5.5)
       axios:
         specifier: ^1.7.9
         version: 1.7.9
@@ -2012,6 +2015,15 @@ packages:
     resolution: {integrity: sha512-/wu1GjuDMIT3FbASgIhlLk2jmQSqAYap0FwTNwnLRazKolvdpoGlSHDpDe8x7mABXzNIkbwrRi0A7R0K7nawnA==}
     peerDependencies:
       storybook: ^8.5.5
+
+  '@storybook/addon-links@8.5.8':
+    resolution: {integrity: sha512-nLfcWhqDCTaEB/zPjzdN+FtsJ3WnvrRE7Uq+UZHF/HDqt7EXicUYCnbzHIF6ReyNBFklr48O/RhotDu9cyUDlw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+      storybook: ^8.5.8
+    peerDependenciesMeta:
+      react:
+        optional: true
 
   '@storybook/addon-measure@8.5.5':
     resolution: {integrity: sha512-iw819jNkQE/e8C5f/AnSFT39BGYvtxUIFQb8E1eS8Hjc3IZvMLcSDNHrxCuCgdPq4XZXvjekIimH6saxtKmaJg==}
@@ -7720,6 +7732,15 @@ snapshots:
       polished: 4.3.1
       storybook: 8.5.5
       ts-dedent: 2.2.0
+
+  '@storybook/addon-links@8.5.8(react@19.0.0)(storybook@8.5.5)':
+    dependencies:
+      '@storybook/csf': 0.1.12
+      '@storybook/global': 5.0.0
+      storybook: 8.5.5
+      ts-dedent: 2.2.0
+    optionalDependencies:
+      react: 19.0.0
 
   '@storybook/addon-measure@8.5.5(storybook@8.5.5)':
     dependencies:

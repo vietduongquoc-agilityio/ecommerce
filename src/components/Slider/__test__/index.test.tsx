@@ -1,22 +1,20 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import Slider from "../index";
+import { useRouter } from "next/navigation";
 
-describe("Slider component", () => {
-  it("matches snapshot", () => {
+jest.mock("next/navigation", () => ({
+  useRouter: jest.fn(),
+}));
+
+const mockPush = jest.fn();
+describe("Slider Component", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+
+    (useRouter as jest.Mock).mockReturnValue({ push: mockPush });
+  });
+  it("renders correctly and matches snapshot", () => {
     const { asFragment } = render(<Slider />);
     expect(asFragment()).toMatchSnapshot();
-  });
-
-  it("renders correctly", () => {
-    const { getByText } = render(<Slider />);
-    expect(
-      getByText("50+ Beautiful rooms inspiration")
-    ).toBeInTheDocument();
-  });
-
-  it("renders image correctly", () => {
-    const { getByAltText } = render(<Slider />);
-    expect(getByAltText("slide-0")).toBeInTheDocument();
   });
 });

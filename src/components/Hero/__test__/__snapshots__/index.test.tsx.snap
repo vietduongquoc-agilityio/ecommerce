@@ -3,10 +3,10 @@
 exports[`Hero Component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <section
-    style="position: relative; width: 100%; margin-bottom: 50px; height: auto; object-fit: cover;"
+    style="position: relative; width: 100%; margin-bottom: 50px;"
   >
     <div
-      style="display: flex; justify-content: center; flex-direction: column; background: rgb(255, 243, 227); width: 645px; padding: 62px 43px 37px 39px; position: absolute; top: 155px; right: 58px; height: 445px; border-radius: 10px;"
+      style="display: flex; justify-content: center; flex-direction: column; background: rgb(255, 243, 227); width: 590px; padding: 62px 0px 37px 30px; position: absolute; top: 155px; right: 45%; left: 55%; height: 445px; border-radius: 10px;"
     >
       <span
         class="rt-Text"
@@ -44,7 +44,7 @@ exports[`Hero Component renders correctly and matches snapshot 1`] = `
       loading="lazy"
       src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
       srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
-      style="color: transparent; width: 100%; display: block;"
+      style="color: transparent; width: 100%; display: block; object-fit: cover;"
       width="40"
     />
   </section>

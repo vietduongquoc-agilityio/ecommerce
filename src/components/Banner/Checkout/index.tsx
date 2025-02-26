@@ -19,7 +19,8 @@ const CheckOutBanner = () => {
           alignItems: "center",
           position: "absolute",
           top: "20%",
-          left: "50%",
+          right: "50%",
+          left:"50%",
           flexDirection: "column",
         }}
       >
